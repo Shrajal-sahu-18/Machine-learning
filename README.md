@@ -5,3 +5,9 @@ This repository contains various Machine Learning projects, examples, and practi
 
 
 ## 🛠️ Technologies Used
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook
