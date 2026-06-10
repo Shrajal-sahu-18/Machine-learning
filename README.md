@@ -18,3 +18,6 @@ This repository contains various Machine Learning projects, examples, and practi
 ```
 machine learning/
 
+```python
+print("hello world")
+```
