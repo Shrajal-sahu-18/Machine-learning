@@ -11,3 +11,6 @@ This repository contains various Machine Learning projects, examples, and practi
 - Matplotlib
 - Scikit-learn
 - Jupyter Notebook
+
+
+## 📂 Repository Structure
