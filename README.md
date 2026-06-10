@@ -14,3 +14,7 @@ This repository contains various Machine Learning projects, examples, and practi
 
 
 ## 📂 Repository Structure
+
+```
+machine learning/
+
