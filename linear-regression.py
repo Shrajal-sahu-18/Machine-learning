@@ -38,3 +38,9 @@ y_pred = model.predict(X_test)
 from sklearn.metrics import r2_score
 r2 = r2_score(y_test,y_pred)
 print("r2_score:",r2)
+n = X_test.shape[0]
+p = X_test.shape[1]
+
+adjusted_r2 = 1 - ((1 -r2) * (n - 1)) / (n - p - 1)
+print("adjusted_r2:",adjusted_r2)
+
