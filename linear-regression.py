@@ -31,3 +31,10 @@ model.fit(X_train,y_train)
 y_pred = model.predict(X_test)
 # print(y_pred)
 # print(y_test)
+
+
+
+#Evaluate
+from sklearn.metrics import r2_score
+r2 = r2_score(y_test,y_pred)
+print("r2_score:",r2)
