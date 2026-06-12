@@ -8,6 +8,8 @@ insurance_data = pd.read_csv("insurance.csv")
 sns.scatterplot(x = insurance_data["bmi"],y = insurance_data["charges"],hue = insurance_data["smoker"])
 # plt.show()
 
+#split dataset into X and y
+
 X = insurance_data.drop(columns = ["charges","region"])
 y = insurance_data["charges"]
 
