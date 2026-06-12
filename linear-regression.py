@@ -15,3 +15,6 @@ y = insurance_data["charges"]
 
 X["sex"] = X["sex"].map({"female":1,"male":0})
 X["smoker"] = X["smoker"].map({"yes":1,"no":0})
+
+#Train test split
+from sklearn.model_selection import train_test_split
