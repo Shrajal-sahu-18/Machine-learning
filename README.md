@@ -12,8 +12,9 @@ This repository contains various Machine Learning projects, examples, and practi
 - Scikit-learn
 - Jupyter Notebook
 
-```
+
 ## 📂 Repository Structure
+```
 machine learning/
 ```
 
