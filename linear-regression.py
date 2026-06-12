@@ -13,4 +13,5 @@ sns.scatterplot(x = insurance_data["bmi"],y = insurance_data["charges"],hue = in
 X = insurance_data.drop(columns = ["charges","region"])
 y = insurance_data["charges"]
 
-
+X["sex"] = X["sex"].map({"female":1,"male":0})
+X["smoker"] = X["smoker"].map({"yes":1,"no":0})
