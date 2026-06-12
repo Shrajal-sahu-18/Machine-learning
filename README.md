@@ -15,7 +15,8 @@ This repository contains various Machine Learning projects, examples, and practi
 
 ## 📂 Repository Structure
 
-```
+
 machine learning/
 
-
+## Teacher
+- Shradha Khapra maa'm(Apna collage)
