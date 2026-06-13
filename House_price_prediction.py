@@ -33,3 +33,7 @@ df = df.dropna()
 
 df.isnull().sum()
 df.head()
+
+# Data Preprocessing - Encoding (Covered in Supervised ML Part2)
+cols = ['MSZoning', 'LotConfig', 'BldgType', 'Exterior1st']
+df = pd.get_dummies(df, columns=cols, drop_first=True)
