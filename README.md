@@ -2,6 +2,7 @@
 This repository contains various Machine Learning projects, examples, and practice notebooks created to improve understanding of ML concepts and algorithms.
 
 ## 📌 Contents
+- Linear Regression
 
 
 ## 🛠️ Technologies Used
@@ -11,6 +12,7 @@ This repository contains various Machine Learning projects, examples, and practi
 - Matplotlib
 - Scikit-learn
 - Jupyter Notebook
+- Vs code
 
 
 ## 📂 Repository Structure
