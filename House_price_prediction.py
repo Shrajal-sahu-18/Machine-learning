@@ -7,3 +7,7 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 from sklearn.metrics import mean_absolute_percentage_error
 import numpy as np
 from sklearn.preprocessing import StandardScaler
+
+#Load data
+
+df = pd.read_csv("HousePricePrediction.csv")
