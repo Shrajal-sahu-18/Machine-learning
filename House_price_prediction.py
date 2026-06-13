@@ -17,3 +17,10 @@ df.shape
 df.head()
 df.info()
 df.describe()
+
+
+
+# Data Preprocessing - Data cleaning
+
+# Drop Id as it doesn't contribute in price
+df.drop(['Id'], axis=1, inplace=True)
