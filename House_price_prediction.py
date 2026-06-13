@@ -27,3 +27,6 @@ df.drop(['Id'], axis=1, inplace=True)
 
 # Replacing SalePrice empty values with their mean values
 df['SalePrice'] = df['SalePrice'].fillna(df['SalePrice'].mean()) 
+
+# Drop records with null values
+df = df.dropna()
