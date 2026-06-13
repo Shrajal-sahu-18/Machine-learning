@@ -11,3 +11,9 @@ from sklearn.preprocessing import StandardScaler
 #Load data
 
 df = pd.read_csv("HousePricePrediction.csv")
+
+#Basic anaylsis
+df.shape
+df.head()
+df.info()
+df.describe()
