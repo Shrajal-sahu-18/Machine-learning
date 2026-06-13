@@ -30,3 +30,6 @@ df['SalePrice'] = df['SalePrice'].fillna(df['SalePrice'].mean())
 
 # Drop records with null values
 df = df.dropna()
+
+df.isnull().sum()
+df.head()
