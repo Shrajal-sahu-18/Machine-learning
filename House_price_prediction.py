@@ -42,3 +42,6 @@ df = pd.get_dummies(df, columns=cols, drop_first=True)
 # Train-Test Split
 X = df.drop(['SalePrice'], axis=1)
 Y = df['SalePrice']
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, Y, test_size=0.2, random_state=0)
