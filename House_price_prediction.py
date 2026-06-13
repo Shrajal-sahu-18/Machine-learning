@@ -24,3 +24,6 @@ df.describe()
 
 # Drop Id as it doesn't contribute in price
 df.drop(['Id'], axis=1, inplace=True)
+
+# Replacing SalePrice empty values with their mean values
+df['SalePrice'] = df['SalePrice'].fillna(df['SalePrice'].mean()) 
