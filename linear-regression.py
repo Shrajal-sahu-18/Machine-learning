@@ -49,3 +49,6 @@ print("adjusted_r2:",adjusted_r2)
 X = insurance_data.drop(columns = ["charges"])
 y = insurance_data["charges"]
 
+X = pd.get_dummies(X,columns = ["region"],drop_first = True,dtype = int)
+X["sex"] = X["sex"].map({"female":1,"male":0})  # convert female,male,1,0
+X["smoker"] = X["smoker"].map({"yes":1,"no":0})
