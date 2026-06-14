@@ -64,3 +64,4 @@ r2 = r2_score(y_test,y_pred)
 print("r2 score:",r2)
 
 X["age_smoker"] = X["age"] * X["smoker"]
+X["bmi_smoker"] = X["bmi"] * X["smoker"]
