@@ -44,3 +44,8 @@ p = X_test.shape[1]
 adjusted_r2 = 1 - ((1 -r2) * (n - 1)) / (n - p - 1)
 print("adjusted_r2:",adjusted_r2)
 
+
+#remove charges 
+X = insurance_data.drop(columns = ["charges"])
+y = insurance_data["charges"]
+
