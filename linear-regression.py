@@ -65,3 +65,6 @@ print("r2 score:",r2)
 
 X["age_smoker"] = X["age"] * X["smoker"]
 X["bmi_smoker"] = X["bmi"] * X["smoker"]
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42)
