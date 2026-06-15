@@ -49,3 +49,6 @@ lasso_cv_model = LassoCV(
     max_iter = 1000,
     random_state = 42
 )
+
+lasso_cv_model.fit(X_train,y_train)
+print("best value for alpha:",lasso_cv_model.alpha_)
