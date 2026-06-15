@@ -40,3 +40,12 @@ print("Mean sqared error:",mse)
 # sns.lineplot(x = alphas,y = mses, marker = "o") 
 
 from sklearn.linear_model import LassoCV
+
+a= [0.001,0.3,1,2,5,20,10,30,40,50,60]
+
+lasso_cv_model = LassoCV(
+    alphas = a,
+    cv = 5,
+    max_iter = 1000,
+    random_state = 42
+)
