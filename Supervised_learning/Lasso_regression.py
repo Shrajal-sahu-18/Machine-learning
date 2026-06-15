@@ -19,3 +19,6 @@ X["smoker"] = X["smoker"].map({"yes":1,"no":0})
 X_train,X_test,y_train,y_test = train_test_split(
     X,y, test_size = 0.2, random_state = 42
 )
+
+lasso_model = Lasso(alpha = 0.5)
+lasso_model.fit(X_train,y_train)
