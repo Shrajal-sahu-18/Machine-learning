@@ -26,3 +26,14 @@ lasso_model.fit(X_train,y_train)
 y_pred = lasso_model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print("Mean sqared error:",mse)
+
+# alphas = [0.001,0.3,1,2,5,20,10,30,40,50,60,38,409,1,2,3,4,5,6,7,8,]
+# mses = []
+# for a in alphas:
+#     lasso_model = Lasso(alpha = a)
+#     lasso_model.fit(X_train,y_train)
+    
+#     y_pred = lasso_model.predict(X_test)
+#     mse = mean_squared_error(y_test, y_pred)
+#     print(f"Mean sqared error for alpha = {a}:",mse)
+#     mses.append(mse)
