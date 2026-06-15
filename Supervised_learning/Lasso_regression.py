@@ -9,3 +9,6 @@ insurance_data = pd.read_csv("insurance.csv")
 #interaction feautre
 X = insurance_data.drop(columns = ["charges"])
 y = insurance_data["charges"]
+
+#One hot encoding
+X = pd.get_dummies(X,columns = ["region"],drop_first = True,dtype = int)
