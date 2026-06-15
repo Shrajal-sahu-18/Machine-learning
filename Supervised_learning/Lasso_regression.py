@@ -38,3 +38,5 @@ print("Mean sqared error:",mse)
 #     print(f"Mean sqared error for alpha = {a}:",mse)
 #     mses.append(mse)
 # sns.lineplot(x = alphas,y = mses, marker = "o") 
+
+from sklearn.linear_model import LassoCV
