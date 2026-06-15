@@ -55,3 +55,6 @@ print("best value for alpha:",lasso_cv_model.alpha_)
 y_pred = lasso_cv_model.predict(X_test)
 mse = mean_squared_error(y_test,y_pred)
 print("mean_squared_error:",mse)
+
+r2 = r2_score(y_test,y_pred)
+print("r2 score:",r2)
