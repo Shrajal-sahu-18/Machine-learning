@@ -52,3 +52,4 @@ lasso_cv_model = LassoCV(
 
 lasso_cv_model.fit(X_train,y_train)
 print("best value for alpha:",lasso_cv_model.alpha_)
+y_pred = lasso_cv_model.predict(X_test)
