@@ -24,3 +24,5 @@ lasso_model = Lasso(alpha = 0.5)
 lasso_model.fit(X_train,y_train)
 
 y_pred = lasso_model.predict(X_test)
+mse = mean_squared_error(y_test, y_pred)
+print("Mean sqared error:",mse)
