@@ -5,3 +5,7 @@ from sklearn.model_selection import train_test_split
 
 #load data
 insurance_data = pd.read_csv("insurance.csv")
+
+#interaction feautre
+X = insurance_data.drop(columns = ["charges"])
+y = insurance_data["charges"]
