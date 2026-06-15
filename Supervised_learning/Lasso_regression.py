@@ -12,3 +12,5 @@ y = insurance_data["charges"]
 
 #One hot encoding
 X = pd.get_dummies(X,columns = ["region"],drop_first = True,dtype = int)
+X["sex"] = X["sex"].map({"female":1,"male":0})  # convert female,male,1,0
+X["smoker"] = X["smoker"].map({"yes":1,"no":0})
