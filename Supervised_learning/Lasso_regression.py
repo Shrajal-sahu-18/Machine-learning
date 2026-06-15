@@ -22,3 +22,5 @@ X_train,X_test,y_train,y_test = train_test_split(
 
 lasso_model = Lasso(alpha = 0.5)
 lasso_model.fit(X_train,y_train)
+
+y_pred = lasso_model.predict(X_test)
