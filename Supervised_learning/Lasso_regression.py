@@ -15,3 +15,7 @@ X = pd.get_dummies(X,columns = ["region"],drop_first = True,dtype = int)
 # add new feautre
 X["sex"] = X["sex"].map({"female":1,"male":0})  # convert female,male,1,0
 X["smoker"] = X["smoker"].map({"yes":1,"no":0})
+
+X_train,X_test,y_train,y_test = train_test_split(
+    X,y, test_size = 0.2, random_state = 42
+)
