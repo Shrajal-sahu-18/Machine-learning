@@ -3,3 +3,5 @@ import seaborn as sns
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score , precision_score
+
+heart_df = pd.read_csv("heart.csv")
