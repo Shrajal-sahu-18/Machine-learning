@@ -10,3 +10,9 @@ heart_df.head()
 heart_df.columns
 heart_df.info()
 heart_df["target"].nunique()
+
+#Split dataset into two parts
+X = heart_df.drop("target",axis = 1)
+y = heart_df["target"]
+X.head()
+y.head()
