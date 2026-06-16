@@ -3,6 +3,7 @@ This repository contains various Machine Learning projects, examples, and practi
 
 ## 📌 Contents
 - Linear Regression
+- Logistic Regression
 
 
 ## 🛠️ Technologies Used
