@@ -5,3 +5,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score , precision_score
 
 heart_df = pd.read_csv("heart.csv")
+
+heart_df.head()
+heart_df.columns
+heart_df.info()
+heart_df["target"].nunique()
