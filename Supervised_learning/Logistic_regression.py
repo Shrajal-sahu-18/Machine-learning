@@ -26,3 +26,5 @@ y_train[y_train == 0] #109
 
 model = LogisticRegression(max_iter = 1000)
 model.fit(X_train,y_train)
+
+y_pred = model.predict(X_test)
