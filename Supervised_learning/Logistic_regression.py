@@ -28,3 +28,5 @@ model = LogisticRegression(max_iter = 1000)
 model.fit(X_train,y_train)
 
 y_pred = model.predict(X_test)
+print("accuracy:", accuracy_score(y_test,y_pred))
+print("precision:", precision_score(y_test,y_pred))
