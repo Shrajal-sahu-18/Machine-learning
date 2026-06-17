@@ -70,3 +70,5 @@ X_test_scaled = scaler.transform(X_test)
 
 model = LinearRegression()
 model.fit(X_train_scaled,y_train)
+
+y_pred = model.predict(X_test_scaled)
