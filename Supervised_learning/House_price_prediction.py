@@ -67,3 +67,6 @@ from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
+
+model = LinearRegression()
+model.fit(X_train_scaled,y_train)
