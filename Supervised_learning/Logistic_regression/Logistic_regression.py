@@ -4,7 +4,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score , precision_score
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import confusion_matrix,classification_report
 heart_df = pd.read_csv("heart.csv")
+
 
 heart_df.head()
 heart_df.columns
