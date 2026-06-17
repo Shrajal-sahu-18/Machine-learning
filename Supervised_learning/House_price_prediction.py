@@ -52,3 +52,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 model = LinearRegression()
 model.fit(X_train,y_train)
 y_pred = model.predict(X_test)
+
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+from sklearn.metrics import mean_absolute_percentage_error
+import numpy as np
