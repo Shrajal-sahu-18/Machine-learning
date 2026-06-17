@@ -72,3 +72,9 @@ model = LinearRegression()
 model.fit(X_train_scaled,y_train)
 
 y_pred = model.predict(X_test_scaled)
+
+
+print("r2_score:",r2_score(y_test,y_pred))
+print("Mae:",mean_absolute_error(y_test,y_pred))
+print("Rmse:",np.sqrt(mean_squared_error(y_test,y_pred)))
+print("mape:",mean_absolute_percentage_error(y_test,y_pred))
