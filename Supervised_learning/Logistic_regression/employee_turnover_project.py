@@ -9,3 +9,8 @@ df = pd.read_csv("employee_turnover.csv")
 #Split Dataset into two parts
 X = df.drop(["Employee_Turnover"],axis = 1)
 y = df["Employee_Turnover"]
+
+#Train Test Split
+X_train,X_test,y_train,y_test = train_test_split(
+    X , y, test_size = 0.2 , random_state = 42
+)
