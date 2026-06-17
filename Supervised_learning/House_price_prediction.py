@@ -56,3 +56,7 @@ y_pred = model.predict(X_test)
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 from sklearn.metrics import mean_absolute_percentage_error
 import numpy as np
+print("r2_score:",r2_score(y_test,y_pred))
+print("mae:",mean_absolute_error(y_test,y_pred))
+print(" root mean sqared error:",np.sqrt(mean_squared_error(y_test,y_pred)))
+print(mean_absolute_percentage_error(y_test, y_pred))
