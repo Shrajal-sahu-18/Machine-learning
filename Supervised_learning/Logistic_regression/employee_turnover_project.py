@@ -18,3 +18,5 @@ X_train,X_test,y_train,y_test = train_test_split(
 # Baseline Logistic Regression
 lr =LogisticRegression()
 lr.fit(X_train,y_train)
+
+y_pred = lr.predict(X_test)
