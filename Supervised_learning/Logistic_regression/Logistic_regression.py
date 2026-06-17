@@ -25,6 +25,7 @@ y_train[y_train == 1] #133
 y_train[y_train == 0] #109
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
 
 model = LogisticRegression(max_iter = 1000)
 model.fit(X_train,y_train)
