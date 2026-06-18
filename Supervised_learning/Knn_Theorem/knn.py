@@ -21,3 +21,7 @@ X_train,X_test,y_train,y_test = train_test_split(
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled =  scaler.transform(X_test)
+
+#train the model#k = 3
+knn_classifier = KNeighborsClassifier(n_neighbors=3)
+knn_classifier.fit(X_train_scaled,y_train)
