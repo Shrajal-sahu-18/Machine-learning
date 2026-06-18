@@ -1,9 +1,11 @@
 # Machine-learning
-This repository contains various Machine Learning projects, examples, and practice notebooks created to improve understanding of ML concepts and algorithms.
+This repository contains various Machine Learning topic, examples, and minor assianment project created to improve understanding of ML concepts and algorithms.
+This repo helps to understand Machine learning in structure format
 
 ## 📌 Contents
 - Linear Regression
 - Logistic Regression
+- Naive_bayes_theorem
 
 
 ## 🛠️ Technologies Used
@@ -19,6 +21,10 @@ This repository contains various Machine Learning projects, examples, and practi
 ## 📂 Repository Structure
 ```
 machine learning/
+supervised_learning/
+├── Linear_Regression/
+├── Logistic_Regression/
+└── Naive_Bayes_theorem/
 ```
 
 ## Teacher
