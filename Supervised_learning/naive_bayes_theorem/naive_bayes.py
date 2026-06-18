@@ -24,3 +24,6 @@ gnb_model.fit(X_train,y_train)
 y_pred = gnb_model.predict(X_test)
 print(y_pred)
 print(y_test)
+
+#EVALUTION
+print("recall score:",recall_score(y_test,y_pred))
