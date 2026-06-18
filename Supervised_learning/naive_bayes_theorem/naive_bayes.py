@@ -7,3 +7,7 @@ from sklearn.naive_bayes import GaussianNB
 heart_df = pd.read_csv("heart.csv")
 
 heart_df.head()
+
+#Split dataset into two parts
+X = heart_df.drop(["target"] , axis = 1)
+y = heart_df["target"]
