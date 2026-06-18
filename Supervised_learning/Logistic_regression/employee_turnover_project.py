@@ -38,3 +38,6 @@ for name,model in models.items():
     print(f"\n{name}")
     print("Accuracy score:",accuracy_score(y_test,y_pred))
     print("Classification report:",classification_report(y_test,y_pred))
+
+
+print("Project Completed")
