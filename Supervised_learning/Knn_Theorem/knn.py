@@ -27,3 +27,8 @@ knn_classifier = KNeighborsClassifier(n_neighbors=3)
 knn_classifier.fit(X_train_scaled,y_train)
 
 y_pred = knn_classifier.predict(X_test_scaled)
+
+#Evaluation
+print("precision_score:",precision_score(y_test,y_pred))
+print("accuracy_score:",accuracy_score(y_test,y_pred))
+print("recall_score:",recall_score(y_test,y_pred))
