@@ -7,3 +7,7 @@ from sklearn.neighbors import KNeighborsClassifier
 #Load data
 heart_df = pd.read_csv("heart.csv")
 heart_df.head()
+
+#split dataset into parts
+X = heart_df.drop(["target"],axis = 1)
+y = heart_df["target"]
