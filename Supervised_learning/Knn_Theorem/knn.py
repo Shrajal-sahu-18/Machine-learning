@@ -25,3 +25,5 @@ X_test_scaled =  scaler.transform(X_test)
 #train the model#k = 3
 knn_classifier = KNeighborsClassifier(n_neighbors=3)
 knn_classifier.fit(X_train_scaled,y_train)
+
+y_pred = knn_classifier.predict(X_test_scaled)
