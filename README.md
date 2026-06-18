@@ -25,7 +25,9 @@ machine learning/
 supervised_learning/
 ├── Linear_Regression/
 ├── Logistic_Regression/
-└── Naive_Bayes_theorem/
+├── Naive_Bayes_theorem/
+├── Knn_Theorem
+
 ```
 
 ## Teacher
