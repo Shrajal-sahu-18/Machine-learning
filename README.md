@@ -20,7 +20,10 @@ This repository contains various Machine Learning projects, examples, and practi
 ## 📂 Repository Structure
 ```
 machine learning/
-Supervised_learning/
+supervised_learning/
+├── Linear_Regression/
+├── Logistic_Regression/
+└── Naive_Bayes/
 ```
 
 ## Teacher
