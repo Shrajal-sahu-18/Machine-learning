@@ -4,6 +4,7 @@ This repository contains various Machine Learning projects, examples, and practi
 ## 📌 Contents
 - Linear Regression
 - Logistic Regression
+- Naive_bayes_theorem
 
 
 ## 🛠️ Technologies Used
@@ -19,6 +20,7 @@ This repository contains various Machine Learning projects, examples, and practi
 ## 📂 Repository Structure
 ```
 machine learning/
+Supervised_learning/
 ```
 
 ## Teacher
