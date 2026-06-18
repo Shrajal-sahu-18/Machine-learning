@@ -6,6 +6,7 @@ This repo help us to understand Machine learning in structure format
 - Linear Regression
 - Logistic Regression
 - Naive_bayes_theorem
+- Knn_Theorem
 
 
 ## 🛠️ Technologies Used
