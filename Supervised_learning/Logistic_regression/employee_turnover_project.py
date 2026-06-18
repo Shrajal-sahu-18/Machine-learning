@@ -31,3 +31,10 @@ l2.fit(X_train,y_train)
 
 from sklearn.metrics import accuracy_score, classification_report
 models = {"Baseline":lr,"Lasso":l1,"Ridge":l2}
+
+
+for name,model in models.items():
+    y_pred = model.predict(X_test)
+    print(f"\n{name}")
+    print("Accuracy score:",accuracy_score(y_test,y_pred))
+    print("Classification report:",classification_report(y_test,y_pred))
