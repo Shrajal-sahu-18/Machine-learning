@@ -19,3 +19,8 @@ X_train,X_test,y_train,y_test = train_test_split(
 #naive bayes
 gnb_model = GaussianNB()
 gnb_model.fit(X_train,y_train)
+
+#test model
+y_pred = gnb_model.predict(X_test)
+print(y_pred)
+print(y_test)
