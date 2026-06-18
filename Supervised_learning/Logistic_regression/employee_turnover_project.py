@@ -28,3 +28,6 @@ l1.fit(X_train,y_train)
 # L2 Regularization (Ridge)
 l2 = LogisticRegression(penalty = "l2", C = 1, max_iter = 200 )
 l2.fit(X_train,y_train)
+
+from sklearn.metrics import accuracy_score, classification_report
+models = {"Baseline":lr,"Lasso":l1,"Ridge":l2}
