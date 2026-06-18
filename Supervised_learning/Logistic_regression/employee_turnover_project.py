@@ -24,3 +24,7 @@ y_pred = lr.predict(X_test)
 #l1 Regularization Lasso
 l1 = LogisticRegression(penalty = "l1",solver = "liblinear", C = 0.5)
 l1.fit(X_train,y_train)
+
+# L2 Regularization (Ridge)
+l2 = LogisticRegression(penalty = "l2", C = 1, max_iter = 200 )
+l2.fit(X_train,y_train)
