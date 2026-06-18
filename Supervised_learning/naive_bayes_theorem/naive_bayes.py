@@ -27,3 +27,4 @@ print(y_test)
 
 #EVALUTION
 print("recall score:",recall_score(y_test,y_pred))
+print("accuracy score:",accuracy_score(y_test,y_pred))
