@@ -17,6 +17,7 @@ This repo help us to understand Machine learning in structure format
 - NumPy
 - Pandas
 - Matplotlib
+- Seaborn
 - Scikit-learn
 - Jupyter Notebook
 - Vs code
