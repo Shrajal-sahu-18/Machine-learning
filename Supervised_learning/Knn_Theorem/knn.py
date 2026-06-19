@@ -82,3 +82,6 @@ result = pd.DataFrame(classifierCV.cv_results_)
 
 print(result[["param_n_neighbors","mean_test_score"]])
 print(classifierCV.best_params_)
+
+#Pipeline
+from sklearn.pipeline import Pipeline
