@@ -103,3 +103,8 @@ classifierCV = GridSearchCV(
 )
 classifierCV.fit(X_train,y_train)
 y_pred = classifierCV.predict(X_test)
+
+#Evaluation
+print("precision_score:",precision_score(y_test,y_pred))
+print("accuracy_score:",accuracy_score(y_test,y_pred))
+print("recall_score:",recall_score(y_test,y_pred))
