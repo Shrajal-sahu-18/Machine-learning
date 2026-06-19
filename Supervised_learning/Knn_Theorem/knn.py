@@ -62,3 +62,11 @@ print("recall_score:",recall_score(y_test,y_pred))
 from sklearn.model_selection import GridSearchCV
 classifier =  KNeighborsClassifier()
 param_grid = {"n_neighbors":[3,5,7,9]}
+
+classifierCV = GridSearchCV(
+    classifier,
+    param_grid,
+    cv = 5,
+    scoring = "recall"
+    
+)
