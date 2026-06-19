@@ -70,3 +70,4 @@ classifierCV = GridSearchCV(
     scoring = "recall"
     
 )
+classifierCV.fit(X_train_scaled,y_train)
