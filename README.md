@@ -7,6 +7,9 @@ This repo help us to understand Machine learning in structure format
 - Logistic Regression
 - Naive_bayes_theorem
 - Knn_Theorem
+- validation cross validation
+- GridSearchCV
+- Pipeline
 
 
 ## 🛠️ Technologies Used
@@ -27,7 +30,7 @@ supervised_learning/
 ├── Logistic_Regression/
 ├── Naive_Bayes_theorem/
 ├── Knn_Theorem
-
+              
 ```
 
 ## Teacher
