@@ -60,3 +60,5 @@ print("recall_score:",recall_score(y_test,y_pred))
 
 #Cross validation for hyperparameter tuning using GridsearchCV
 from sklearn.model_selection import GridSearchCV
+classifier =  KNeighborsClassifier()
+param_grid = {"n_neighbors":[3,5,7,9]}
