@@ -94,3 +94,10 @@ pipeline = Pipeline([
 ])
 
 param_grid = {"knn__n_neighbors":[3,5,7,9]}
+classifierCV = GridSearchCV(
+    pipeline,
+    param_grid,
+    cv = 5,
+    scoring = "recall"
+    
+)
