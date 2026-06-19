@@ -108,3 +108,5 @@ y_pred = classifierCV.predict(X_test)
 print("precision_score:",precision_score(y_test,y_pred))
 print("accuracy_score:",accuracy_score(y_test,y_pred))
 print("recall_score:",recall_score(y_test,y_pred))
+
+print(classifierCV.best_params_)
