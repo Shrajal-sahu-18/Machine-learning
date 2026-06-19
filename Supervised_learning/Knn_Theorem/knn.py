@@ -57,3 +57,6 @@ y_pred = knn_classifier.predict(X_test_scaled)
 print("precision_score:",precision_score(y_test,y_pred))
 print("accuracy_score:",accuracy_score(y_test,y_pred))
 print("recall_score:",recall_score(y_test,y_pred))
+
+#Cross validation for hyperparameter tuning using GridsearchCV
+from sklearn.model_selection import GridSearchCV
