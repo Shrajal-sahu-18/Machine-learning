@@ -92,3 +92,5 @@ X_train,X_test,y_train,y_test = train_test_split(
 pipeline = Pipeline([
     ('scaler', StandardScaler()), ('knn',  KNeighborsClassifier())
 ])
+
+param_grid = {"knn__n_neighbors":[3,5,7,9]}
