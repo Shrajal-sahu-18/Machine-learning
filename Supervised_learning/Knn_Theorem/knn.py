@@ -71,3 +71,4 @@ classifierCV = GridSearchCV(
     
 )
 classifierCV.fit(X_train_scaled,y_train)
+y_pred = classifierCV.predict(X_test_scaled)
