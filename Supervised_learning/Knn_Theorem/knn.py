@@ -77,3 +77,5 @@ y_pred = classifierCV.predict(X_test_scaled)
 print("precision_score:",precision_score(y_test,y_pred))
 print("accuracy_score:",accuracy_score(y_test,y_pred))
 print("recall_score:",recall_score(y_test,y_pred))
+
+result = pd.DataFrame(classifierCV.cv_results_)
