@@ -81,3 +81,4 @@ print("recall_score:",recall_score(y_test,y_pred))
 result = pd.DataFrame(classifierCV.cv_results_)
 
 print(result[["param_n_neighbors","mean_test_score"]])
+print(classifierCV.best_params_)
