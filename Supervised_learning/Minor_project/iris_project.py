@@ -25,3 +25,7 @@ lr.fit(X_train,y_train)
 
 y_pred  = lr.predict(X_test)
 print(y_pred)
+
+
+#Knn Model
+from sklearn.neighbors import KNeighborsClassifier
