@@ -41,3 +41,13 @@ y_pred =nb.predict(X_test)
 
 
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+models = {"LogisticRegression":lr,"knn model":knn,"Guassian model":nb}
+
+for name,model in models.items():
+    y_pred = model.predict(X_test)
+    print(f"\n {name} ")
+    print("Accuracy:", accuracy_score(y, y_pred))
+    
+    print("cm:", confusion_matrix(y, y_pred))
+
+    print("classification report:", classification_report(y, y_pred))
