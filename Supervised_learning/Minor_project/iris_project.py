@@ -8,3 +8,5 @@ le = LabelEncoder()
 df["Species"] = le.fit_transform(df["Species"])
 print(df)
 
+#Train test split
+from sklearn.model_selection import train_test_split
