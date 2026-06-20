@@ -37,3 +37,4 @@ y_pred = knn.predict(X_test)
 from sklearn.naive_bayes import GaussianNB
 nb  = GaussianNB()
 nb.fit(X_train,y_train)
+y_pred =nb.predict(X_test)
