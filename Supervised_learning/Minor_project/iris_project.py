@@ -38,3 +38,6 @@ from sklearn.naive_bayes import GaussianNB
 nb  = GaussianNB()
 nb.fit(X_train,y_train)
 y_pred =nb.predict(X_test)
+
+
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
