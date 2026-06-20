@@ -31,3 +31,4 @@ print(y_pred)
 from sklearn.neighbors import KNeighborsClassifier
 knn = KNeighborsClassifier(n_neighbors = 5)
 knn.fit(X_train,y_train)
+y_pred = knn.predict(X_test)
