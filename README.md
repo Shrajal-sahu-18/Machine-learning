@@ -7,6 +7,10 @@ This repo help us to understand Machine learning in structure format
 - Logistic Regression
 - Naive_bayes_theorem
 - Knn_Theorem
+- validation cross validation
+- GridSearchCV
+- Pipeline
+- Minor project
 
 
 ## 🛠️ Technologies Used
@@ -14,6 +18,7 @@ This repo help us to understand Machine learning in structure format
 - NumPy
 - Pandas
 - Matplotlib
+- Seaborn
 - Scikit-learn
 - Jupyter Notebook
 - Vs code
@@ -27,7 +32,7 @@ supervised_learning/
 ├── Logistic_Regression/
 ├── Naive_Bayes_theorem/
 ├── Knn_Theorem
-
+              
 ```
 
 ## Teacher
