@@ -20,5 +20,5 @@ X_train,X_test,y_train,y_test = train_test_split(
 
 # Logistic regression
 from sklearn.linear_model import LogisticRegression
-lr = LogisticRegression()
+lr = LogisticRegression(max_iter = 1000)
 lr.fit(X_train,y_train)
