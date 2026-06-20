@@ -10,6 +10,7 @@ This repo help us to understand Machine learning in structure format
 - validation cross validation
 - GridSearchCV
 - Pipeline
+- Minor project
 
 
 ## 🛠️ Technologies Used
