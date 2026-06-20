@@ -51,3 +51,5 @@ for name,model in models.items():
     print("cm:", confusion_matrix(y, y_pred))
 
     print("classification report:", classification_report(y, y_pred))
+
+print("project complete")
