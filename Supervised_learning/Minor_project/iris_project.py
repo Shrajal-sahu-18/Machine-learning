@@ -10,3 +10,6 @@ print(df)
 
 #Train test split
 from sklearn.model_selection import train_test_split
+
+X = df.drop(["Species"],axis = 1)
+y = df["Species"]
