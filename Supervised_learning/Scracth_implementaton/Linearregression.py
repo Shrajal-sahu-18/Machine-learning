@@ -38,3 +38,7 @@ model.fit(X,y)
 
 y_pred = model.predict(X)
 print(y_pred)
+
+
+print(model.bias)
+print(model.weights)
