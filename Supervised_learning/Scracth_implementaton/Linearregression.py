@@ -5,3 +5,5 @@ class LinearRegression:
         self.weights = None
         self.lr = learning_rate
         self.n_iter = n_iter
+    
+    def fit(self,X,y):
