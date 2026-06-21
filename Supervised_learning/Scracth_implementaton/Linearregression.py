@@ -36,4 +36,5 @@ y = np.array([2,4,6,8,10])
 model = LinearRegression()
 model.fit(X,y)
 
-
+y_pred = model.predict(X)
+print(y_pred)
