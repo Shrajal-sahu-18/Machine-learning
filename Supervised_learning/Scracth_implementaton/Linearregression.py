@@ -16,4 +16,10 @@ class LinearRegression:
         for i in range(self.n_iter):
             y_pred = self.bias + np.dot(X,self.weights)
 
+               #Step 3  gradients
+            db = (1/m) * np.sum(y_pred - y)
+            dw = (1/m) * np.dot(X.T , (y_pred - y))
+
+        
+
 
