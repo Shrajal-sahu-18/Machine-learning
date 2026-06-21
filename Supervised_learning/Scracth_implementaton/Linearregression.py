@@ -14,5 +14,6 @@ class LinearRegression:
         self.weights = np.zeros(n)
         #Step - 2
         for i in range(self.n_iter):
+            y_pred = self.bias + np.dot(X,self.weights)
 
 
