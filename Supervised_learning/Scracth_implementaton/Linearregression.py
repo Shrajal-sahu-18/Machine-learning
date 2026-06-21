@@ -20,6 +20,10 @@ class LinearRegression:
             db = (1/m) * np.sum(y_pred - y)
             dw = (1/m) * np.dot(X.T , (y_pred - y))
 
+             #Step 4 convergence theorem - param update
+            self.bias = self.bias - self.lr * db # -= self.lr + db
+            self.weights = self.weights - self.lr * dw # -=self.lr + dw
+
         
 
 
