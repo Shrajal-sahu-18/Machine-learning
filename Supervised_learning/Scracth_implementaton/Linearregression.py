@@ -8,3 +8,6 @@ class LinearRegression:
     
     def fit(self,X,y):
         m,n = X.shape #(number of row number of column = sample,features)
+    
+    #sTEP - 1
+    
