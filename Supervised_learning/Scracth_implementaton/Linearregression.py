@@ -12,4 +12,7 @@ class LinearRegression:
         #sTEP - 1 # intilize the parameter
         self.bias = 0
         self.weights = np.zeros(n)
+        #Step - 2
+        for i in range(self.n_iter):
+
 
