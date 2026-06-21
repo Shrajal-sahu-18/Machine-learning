@@ -11,6 +11,7 @@ This repo help us to understand Machine learning in structure format
 - GridSearchCV
 - Pipeline
 - Minor project
+- Scracth implementation
 
 
 ## 🛠️ Technologies Used
@@ -31,7 +32,10 @@ supervised_learning/
 ├── Linear_Regression/
 ├── Logistic_Regression/
 ├── Naive_Bayes_theorem/
-├── Knn_Theorem
+├── Knn_Theorem/
+├── Minor project/
+├── Scracth implementation
+
               
 ```
 
