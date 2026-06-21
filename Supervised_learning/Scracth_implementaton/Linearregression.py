@@ -9,5 +9,7 @@ class LinearRegression:
     def fit(self,X,y):
         m,n = X.shape #(number of row number of column = sample,features)
     
-    #sTEP - 1
-    
+        #sTEP - 1 # intilize the parameter
+        self.bias = 0
+        self.weights = np.zeros(n)
+
