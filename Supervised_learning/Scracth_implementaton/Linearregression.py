@@ -7,3 +7,4 @@ class LinearRegression:
         self.n_iter = n_iter
     
     def fit(self,X,y):
+        m,n = X.shape #(number of row number of column = sample,features)
