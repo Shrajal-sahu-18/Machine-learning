@@ -23,6 +23,11 @@ class LinearRegression:
              #Step 4 convergence theorem - param update
             self.bias = self.bias - self.lr * db # -= self.lr + db
             self.weights = self.weights - self.lr * dw # -=self.lr + dw
+    
+        
+    def predict(self,X):
+        y_pred = self.bias + np.dot(X,self.weights)
+        return y_pred
 
         
 
