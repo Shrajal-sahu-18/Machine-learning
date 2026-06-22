@@ -15,3 +15,4 @@ df.describe()
 
 # Handle missing value
 categorical_cols = df.select_dtypes(include = "object").columns
+numerical_cols = df.select_dtypes(include = "float64").columns 
