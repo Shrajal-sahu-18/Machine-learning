@@ -46,3 +46,9 @@ ax.bar_label(ax.containers[0])
 emp_cunt = df["Employment_Status"].value_counts()
 ax = sns.barplot(emp_cunt)
 ax.bar_label(ax.containers[0])
+
+
+
+martial_cnt = df["Marital_Status"].value_counts()
+ax = sns.barplot(martial_cnt)
+ax.bar_label(ax.containers[0])
