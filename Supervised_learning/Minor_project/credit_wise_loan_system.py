@@ -6,4 +6,9 @@ from sklearn.model_selection import train_test_split
 
 
 df = pd.read_csv("loan_approval_data.csv")
-print(df.head())
+# print(df.head())
+
+df.head()
+df.info()
+df.isnull().sum()
+df.describe()
