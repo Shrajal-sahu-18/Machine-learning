@@ -26,3 +26,5 @@ df[numerical_cols] = num_imp.fit_transform(df[numerical_cols])
 
 categorical_imp = SimpleImputer(strategy = "most_frequent")
 df[categorical_cols] = categorical_imp.fit_transform(df[categorical_cols])
+
+#EDA(Exploratory Data Analysis)
