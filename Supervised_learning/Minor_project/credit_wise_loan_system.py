@@ -28,3 +28,6 @@ categorical_imp = SimpleImputer(strategy = "most_frequent")
 df[categorical_cols] = categorical_imp.fit_transform(df[categorical_cols])
 
 #EDA(Exploratory Data Analysis)
+
+# how balanced our classes are
+classes_count = df["Loan_Approved"].value_counts()
