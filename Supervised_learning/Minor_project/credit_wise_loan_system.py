@@ -42,3 +42,7 @@ ax.bar_label(ax.containers[0])
 edu_cnt = df["Education_Level"].value_counts()
 ax = sns.barplot(edu_cnt)
 ax.bar_label(ax.containers[0])
+
+emp_cunt = df["Employment_Status"].value_counts()
+ax = sns.barplot(emp_cunt)
+ax.bar_label(ax.containers[0])
