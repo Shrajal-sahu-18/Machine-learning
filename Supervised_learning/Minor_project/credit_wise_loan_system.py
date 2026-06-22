@@ -37,3 +37,6 @@ plt.title("Is loan approved or not")
 gender_cnt = df["Gender"].value_counts()
 ax =sns.barplot(gender_cnt)
 ax.bar_label(ax.containers[0])
+
+
+edu_cnt = df["Education_Level"].value_counts()
