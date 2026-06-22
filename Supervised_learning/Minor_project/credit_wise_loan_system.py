@@ -35,3 +35,4 @@ plt.pie(classes_count , labels = ["No","Yes"], autopct = "%1.1f%%")
 plt.title("Is loan approved or not")
 
 gender_cnt = df["Gender"].value_counts()
+ax =sns.barplot(gender_cnt)
