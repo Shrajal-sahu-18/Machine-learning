@@ -31,3 +31,5 @@ df[categorical_cols] = categorical_imp.fit_transform(df[categorical_cols])
 
 # how balanced our classes are
 classes_count = df["Loan_Approved"].value_counts()
+plt.pie(classes_count , labels = ["No","Yes"], autopct = "%1.1f%%")
+plt.title("Is loan approved or not")
