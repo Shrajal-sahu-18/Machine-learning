@@ -20,3 +20,6 @@ numerical_cols = df.select_dtypes(include = "float64").columns
 categorical_cols.size + numerical_cols.size 
 
 from sklearn.impute import SimpleImputer
+
+num_imp = SimpleImputer(strategy = "mean")
+df[numerical_cols] = num_imp.fit_transform(df[numerical_cols])
