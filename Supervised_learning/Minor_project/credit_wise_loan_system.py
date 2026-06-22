@@ -12,3 +12,6 @@ df.head()
 df.info()
 df.isnull().sum()
 df.describe()
+
+# Handle missing value
+categorical_cols = df.select_dtypes(include = "object").columns
