@@ -18,3 +18,5 @@ categorical_cols = df.select_dtypes(include = "object").columns
 numerical_cols = df.select_dtypes(include = "float64").columns 
 
 categorical_cols.size + numerical_cols.size 
+
+from sklearn.impute import SimpleImputer
