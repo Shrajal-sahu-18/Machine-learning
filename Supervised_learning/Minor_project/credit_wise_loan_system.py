@@ -121,3 +121,6 @@ sns.histplot(
     multiple = "dodge",
     bins = 20
 )
+
+#Remove_applicant_id
+df = df.drop("Applicant_ID",axis = 1)
