@@ -76,3 +76,10 @@ sns.histplot(
     bins = 20
     
 )
+
+
+sns.histplot(
+    data = df,
+    x = "Coapplicant_Income",
+    bins = 20
+)
