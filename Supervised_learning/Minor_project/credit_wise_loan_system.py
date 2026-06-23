@@ -140,3 +140,4 @@ df["Loan_Approved"] = le.fit_transform(df["Loan_Approved"])
 cols = ["Employment_Status","Marital_Status","Loan_Purpose","Property_Area","Gender","Employer_Category"]
 ohe = OneHotEncoder(drop = "first",sparse_output = False,handle_unknown = "ignore")
 encoded = ohe.fit_transform(df[cols])
+encoded_df = pd.DataFrame(encoded,columns = ohe.get_feature_names_out(cols),index = df.index )
