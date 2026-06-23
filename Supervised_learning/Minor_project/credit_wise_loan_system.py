@@ -135,3 +135,6 @@ df.info()
 le = LabelEncoder()
 df["Education_Level"] = le.fit_transform(df["Education_Level"])
 df["Loan_Approved"] = le.fit_transform(df["Loan_Approved"])
+
+#oNEhOTeNCODING
+cols = ["Employment_Status","Marital_Status","Loan_Purpose","Property_Area","Gender","Employer_Category"]
