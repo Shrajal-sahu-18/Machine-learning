@@ -142,3 +142,15 @@ ohe = OneHotEncoder(drop = "first",sparse_output = False,handle_unknown = "ignor
 encoded = ohe.fit_transform(df[cols])
 encoded_df = pd.DataFrame(encoded,columns = ohe.get_feature_names_out(cols),index = df.index )
 df = pd.concat([df.drop(columns = cols),encoded_df],axis = 1)
+
+
+#correlation heat map
+num_cols = df.select_dtypes(include = "number")
+corr_matrix = num_cols.corr()
+plt.figure(figsize = (15,8))
+sns.heatmap(
+    corr_matrix,
+    annot = True,
+    fmt = ".2f",
+    cmap = "coolwarm"
+)
