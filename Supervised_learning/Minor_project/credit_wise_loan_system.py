@@ -141,3 +141,4 @@ cols = ["Employment_Status","Marital_Status","Loan_Purpose","Property_Area","Gen
 ohe = OneHotEncoder(drop = "first",sparse_output = False,handle_unknown = "ignore")
 encoded = ohe.fit_transform(df[cols])
 encoded_df = pd.DataFrame(encoded,columns = ohe.get_feature_names_out(cols),index = df.index )
+df = pd.concat([df.drop(columns = cols),encoded_df],axis = 1)
