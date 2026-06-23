@@ -93,3 +93,12 @@ sns.boxplot(
 )
 
 fig,axes = plt.subplots(2,3)
+
+sns.boxplot(ax = axes[0,0], data = df,x = "Loan_Approved",y = "Applicant_Income")
+sns.boxplot(ax = axes[0,1], data = df,x = "Loan_Approved", y = "Credit_Score")
+sns.boxplot(ax = axes[0,2],data = df,x = "Loan_Approved",y = "Age")
+sns.boxplot(ax = axes[1,0], data = df, x = "Loan_Approved", y = "DTI_Ratio")
+sns.boxplot(ax = axes[1,1], data = df , x = "Loan_Approved", y = "Savings")
+sns.boxplot(ax = axes[1,2],data = df,x = "Loan_Approved",y = "Loan_Amount")
+
+plt.tight_layout()
