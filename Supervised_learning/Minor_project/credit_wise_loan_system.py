@@ -52,3 +52,7 @@ ax.bar_label(ax.containers[0])
 martial_cnt = df["Marital_Status"].value_counts()
 ax = sns.barplot(martial_cnt)
 ax.bar_label(ax.containers[0])
+
+purpose_cnt = df["Loan_Purpose"].value_counts()
+ax = sns.barplot(purpose_cnt)
+ax.bar_label(ax.containers[0])
