@@ -91,3 +91,5 @@ sns.boxplot(
     x = "Loan_Approved",
     y = "Applicant_Income"
 )
+
+fig,axes = plt.subplots(2,3)
