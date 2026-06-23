@@ -66,3 +66,13 @@ ax.bar_label(ax.containers[0])
 empl_cate_cnt = df["Employer_Category"].value_counts()
 ax = sns.barplot(empl_cate_cnt)
 ax.bar_label(ax.containers[0])
+
+
+
+#Analyze Income
+sns.histplot(
+    data = df,
+    x = "Applicant_Income",
+    bins = 20
+    
+)
