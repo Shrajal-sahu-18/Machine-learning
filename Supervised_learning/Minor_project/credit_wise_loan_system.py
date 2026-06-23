@@ -160,3 +160,8 @@ num_cols.corr()["Loan_Approved"].sort_values(ascending = False)
 #split dataset 
 X = df.drop(["Loan_Approved"],axis = 1)
 y = df["Loan_Approved"]
+
+#train test split
+X_train,X_test,y_train,y_test = train_test_split(
+    X,y, test_size = 0.2 , random_state  =42
+)
