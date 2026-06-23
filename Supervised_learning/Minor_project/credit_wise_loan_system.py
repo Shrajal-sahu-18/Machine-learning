@@ -154,3 +154,5 @@ sns.heatmap(
     fmt = ".2f",
     cmap = "coolwarm"
 )
+num_cols.corr()["Loan_Approved"].sort_values(ascending = False)
+# corr_matrix
