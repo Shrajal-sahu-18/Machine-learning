@@ -102,3 +102,13 @@ sns.boxplot(ax = axes[1,1], data = df , x = "Loan_Approved", y = "Savings")
 sns.boxplot(ax = axes[1,2],data = df,x = "Loan_Approved",y = "Loan_Amount")
 
 plt.tight_layout()
+
+#credit score with loan approved
+sns.histplot(
+    data = df,
+    x = "Credit_Score",
+    hue = "Loan_Approved",
+    bins = 20,
+    multiple = "dodge" 
+    # side by side dodge ka mtlb alag alag category ke bars ko alag alag dikhana
+)
