@@ -112,3 +112,12 @@ sns.histplot(
     multiple = "dodge" 
     # side by side dodge ka mtlb alag alag category ke bars ko alag alag dikhana
 )
+
+
+sns.histplot(
+    data = df,
+    x = "Applicant_Income",
+    hue = "Loan_Approved",
+    multiple = "dodge",
+    bins = 20
+)
