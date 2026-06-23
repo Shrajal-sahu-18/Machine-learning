@@ -124,3 +124,8 @@ sns.histplot(
 
 #Remove_applicant_id
 df = df.drop("Applicant_ID",axis = 1)
+
+#Encoding 
+df.head()
+df.columns
+df.info()
