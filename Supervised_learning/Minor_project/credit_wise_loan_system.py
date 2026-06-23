@@ -83,3 +83,11 @@ sns.histplot(
     x = "Coapplicant_Income",
     bins = 20
 )
+
+
+#Outliers - box_plot
+sns.boxplot(
+    data = df,
+    x = "Loan_Approved",
+    y = "Applicant_Income"
+)
