@@ -56,3 +56,8 @@ ax.bar_label(ax.containers[0])
 purpose_cnt = df["Loan_Purpose"].value_counts()
 ax = sns.barplot(purpose_cnt)
 ax.bar_label(ax.containers[0])
+
+
+property_area_cnt =df["Property_Area"].value_counts()
+ax = sns.barplot(property_area_cnt)
+ax.bar_label(ax.containers[0])
