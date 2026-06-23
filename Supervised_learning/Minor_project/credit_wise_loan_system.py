@@ -156,3 +156,7 @@ sns.heatmap(
 )
 num_cols.corr()["Loan_Approved"].sort_values(ascending = False)
 # corr_matrix
+
+#split dataset 
+X = df.drop(["Loan_Approved"],axis = 1)
+y = df["Loan_Approved"]
