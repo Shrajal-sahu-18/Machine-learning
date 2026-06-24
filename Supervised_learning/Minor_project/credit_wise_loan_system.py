@@ -223,3 +223,10 @@ df["Credit_Score_sq"] = df["Credit_Score"] ** 2
 #Split Data
 X = df.drop(columns = ["Loan_Approved","DTI_Ratio","Credit_Score"])
 y = df["Loan_Approved"]
+
+
+#train test split
+
+X_train,X_test,y_train,y_test = train_test_split(
+    X,y, test_size = 0.2 , random_state  =42
+)
