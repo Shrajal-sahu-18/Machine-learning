@@ -204,3 +204,5 @@ print("Accuracy score:",accuracy_score(y_test,y_pred))
 #GuassianNB model
 naive_model = GaussianNB()
 naive_model.fit(X_train_scaled,y_train)
+naive_model.predict(X_test_scaled)
+y_pred = naive_model.predict(X_test_scaled)
