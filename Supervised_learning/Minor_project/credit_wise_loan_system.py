@@ -191,3 +191,4 @@ print("Accuracy score:",accuracy_score(y_test,y_pred))
 #knn model
 knn_model = KNeighborsClassifier(n_neighbors=5)
 knn_model.fit(X_train_scaled,y_train)
+y_pred = knn_model.predict(X_test_scaled)
