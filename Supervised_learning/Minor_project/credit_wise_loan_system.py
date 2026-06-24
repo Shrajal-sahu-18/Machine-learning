@@ -186,3 +186,8 @@ print("recall score:",recall_score(y_test,y_pred))
 print("f1 score:",f1_score(y_test,y_pred))
 print("confusion matrix:",confusion_matrix(y_test,y_pred))
 print("Accuracy score:",accuracy_score(y_test,y_pred))
+
+
+#knn model
+knn_model = KNeighborsClassifier(n_neighbors=5)
+knn_model.fit(X_train_scaled,y_train)
