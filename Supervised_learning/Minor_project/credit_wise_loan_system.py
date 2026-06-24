@@ -178,3 +178,10 @@ X_test_scaled = scaler.transform(X_test)
 logs_model = LogisticRegression()
 logs_model.fit(X_train_scaled,y_train)
 y_pred = logs_model.predict(X_test_scaled)
+
+# Evaluation
+print("precision score:",precision_score(y_test,y_pred))
+print("recall score:",recall_score(y_test,y_pred))
+print("f1 score:",f1_score(y_test,y_pred))
+print("confusion matrix:",confusion_matrix(y_test,y_pred))
+print("Accuracy score:",accuracy_score(y_test,y_pred))
