@@ -8,6 +8,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import precision_score,confusion_matrix,recall_score,f1_score,accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.naive_bayes import GaussianNB
 
 df = pd.read_csv("loan_approval_data.csv")
 # print(df.head())
@@ -199,3 +200,5 @@ print("recall score:",recall_score(y_test,y_pred))
 print("f1 score:",f1_score(y_test,y_pred))
 print("confusion matrix:",confusion_matrix(y_test,y_pred))
 print("Accuracy score:",accuracy_score(y_test,y_pred))
+
+
