@@ -219,3 +219,7 @@ print("Accuracy score:",accuracy_score(y_test,y_pred))
 #Feature Enngineering 
 df["DTI_Ratio_sq"] = df["DTI_Ratio"] ** 2
 df["Credit_Score_sq"] = df["Credit_Score"] ** 2
+
+#Split Data
+X = df.drop(columns = ["Loan_Approved","DTI_Ratio","Credit_Score"])
+y = df["Loan_Approved"]
