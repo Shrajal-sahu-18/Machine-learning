@@ -5,6 +5,8 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder
 from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import precision_score,confusion_matrix,recall_score,f1_score,accuracy_score
 
 df = pd.read_csv("loan_approval_data.csv")
 # print(df.head())
