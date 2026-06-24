@@ -177,3 +177,4 @@ X_test_scaled = scaler.transform(X_test)
 #Train linearregression model
 logs_model = LogisticRegression()
 logs_model.fit(X_train_scaled,y_train)
+y_pred = logs_model.predict(X_test_scaled)
