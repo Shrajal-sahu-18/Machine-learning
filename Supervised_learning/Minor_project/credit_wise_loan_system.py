@@ -264,3 +264,11 @@ print("recall score:",recall_score(y_test,y_pred))
 print("f1 score:",f1_score(y_test,y_pred))
 print("confusion matrix:",confusion_matrix(y_test,y_pred))
 print("Accuracy score:",accuracy_score(y_test,y_pred))
+
+
+
+# naive bayes
+from sklearn.naive_bayes import GaussianNB
+naive_model = GaussianNB()
+naive_model.fit(X_train_scaled,y_train)
+naive_model.predict(X_test_scaled)
