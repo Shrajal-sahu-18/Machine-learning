@@ -280,3 +280,8 @@ print("recall score:",recall_score(y_test,y_pred))
 print("f1 score:",f1_score(y_test,y_pred))
 print("confusion matrix:",confusion_matrix(y_test,y_pred))
 print("Accuracy score:",accuracy_score(y_test,y_pred))
+
+#feature Engineering
+
+df["DTI_Ratio_sq"] = df["DTI_Ratio"] ** 2
+df["Credit_Score_sq"] = df["Credit_Score"] ** 2
