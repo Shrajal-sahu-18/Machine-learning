@@ -258,3 +258,9 @@ from sklearn.neighbors import KNeighborsClassifier
 knn_model = KNeighborsClassifier(n_neighbors=5)
 knn_model.fit(X_train_scaled,y_train)
 y_pred = knn_model.predict(X_test_scaled)
+#Evaluation 
+print("precision score:",precision_score(y_test,y_pred))
+print("recall score:",recall_score(y_test,y_pred))
+print("f1 score:",f1_score(y_test,y_pred))
+print("confusion matrix:",confusion_matrix(y_test,y_pred))
+print("Accuracy score:",accuracy_score(y_test,y_pred))
