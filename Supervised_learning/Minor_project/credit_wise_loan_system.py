@@ -242,3 +242,4 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import precision_score,confusion_matrix,recall_score,f1_score,accuracy_score
 logs_model = LogisticRegression()
 logs_model.fit(X_train_scaled,y_train)
+y_pred = logs_model.predict(X_test_scaled)
