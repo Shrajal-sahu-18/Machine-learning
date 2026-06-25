@@ -235,3 +235,10 @@ X_train,X_test,y_train,y_test = train_test_split(
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
+
+
+# Logistic regression
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import precision_score,confusion_matrix,recall_score,f1_score,accuracy_score
+logs_model = LogisticRegression()
+logs_model.fit(X_train_scaled,y_train)
