@@ -316,3 +316,5 @@ X_test_scaled = scaler.transform(X_test)
 naive_model = GaussianNB()
 naive_model.fit(X_train_scaled,y_train)
 y_pred = naive_model.predict(X_test_scaled)
+
+import joblib
