@@ -285,3 +285,7 @@ print("Accuracy score:",accuracy_score(y_test,y_pred))
 
 df["DTI_Ratio_sq"] = df["DTI_Ratio"] ** 2
 df["Credit_Score_sq"] = df["Credit_Score"] ** 2
+
+naive_model = GaussianNB()
+naive_model.fit(X_train_scaled,y_train)
+naive_model.predict(X_test_scaled)
