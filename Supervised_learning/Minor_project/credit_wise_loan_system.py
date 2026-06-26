@@ -312,3 +312,7 @@ X_train,X_test,y_train,y_test = train_test_split(
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
+
+naive_model = GaussianNB()
+naive_model.fit(X_train_scaled,y_train)
+naive_model.predict(X_test_scaled)
