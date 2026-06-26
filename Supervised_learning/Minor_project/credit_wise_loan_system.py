@@ -301,3 +301,6 @@ from sklearn.naive_bayes import GaussianNB
 
 # df.to_csv("loan.csv")
 df = pd.read_csv("loan.csv")
+
+X = df.drop(["Loan_Approved"],axis = 1)
+y = df["Loan_Approved"]
