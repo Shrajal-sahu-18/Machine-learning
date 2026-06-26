@@ -304,3 +304,11 @@ df = pd.read_csv("loan.csv")
 
 X = df.drop(["Loan_Approved"],axis = 1)
 y = df["Loan_Approved"]
+
+X_train,X_test,y_train,y_test = train_test_split(
+    X,y, test_size = 0.2,random_state = 42
+)
+
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
