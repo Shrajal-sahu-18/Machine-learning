@@ -15,6 +15,8 @@ target = ["survived"]
 from sklearn.impute import SimpleImputer
 imp_median = SimpleImputer(strategy = "median")
 titanic[["age"]] = imp_median.fit_transform(titanic[["age"]]) 
+most_freq = SimpleImputer(strategy = "most_frequent")
+titanic[["embarked"]] = most_freq.fit_transform(titanic[["embarked"]]) 
 
 from sklearn.preprocessing import LabelEncoder
 
