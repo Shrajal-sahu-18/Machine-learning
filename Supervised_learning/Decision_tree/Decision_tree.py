@@ -43,3 +43,16 @@ y_pred = model.predict(X_test)
 
 from sklearn.metrics import accuracy_score
 print("accuracy_score:",accuracy_score(y_test,y_pred))
+
+from sklearn.tree import plot_tree
+plt.figure(figsize = (18,10))
+
+plot_tree(
+    model,
+    feature_names = X.columns,
+    class_names = ["Died","Survived"],
+    filled = True,
+    max_depth = 2
+)
+plt.tight_layout(),
+plt.show()
