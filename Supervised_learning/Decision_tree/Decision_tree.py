@@ -34,3 +34,6 @@ X_train,X_test,y_train,y_test = train_test_split(
 
 # Decision tree classifier - no prunning
 from sklearn.tree import DecisionTreeClassifier
+
+model = DecisionTreeClassifier()
+model.fit(X_train,y_train)
