@@ -10,3 +10,5 @@ titanic.isnull().sum()
 
 feature = ["pclass","sex","fare","embarked","age"]
 target = ["survived"]
+
+from sklearn.preprocessing import LabelEncoder
