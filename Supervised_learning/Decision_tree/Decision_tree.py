@@ -7,3 +7,6 @@ titanic = sns.load_dataset("titanic")
 titanic.head(5)
 titanic.info()
 titanic.isnull().sum()
+
+feature = ["pclass","sex","fare","embarked","age"]
+target = ["survived"]
