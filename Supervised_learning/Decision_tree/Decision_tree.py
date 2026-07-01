@@ -23,3 +23,7 @@ from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 titanic["sex"] = le.fit_transform(titanic["sex"])
 titanic["embarked"] = le.fit_transform(titanic["embarked"])
+
+
+X = titanic[feature]
+y = titanic[target]
