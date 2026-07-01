@@ -11,6 +11,11 @@ titanic.isnull().sum()
 feature = ["pclass","sex","fare","embarked","age"]
 target = ["survived"]
 
+#Missing value
+from sklearn.impute import SimpleImputer
+imp_median = SimpleImputer(strategy = "median")
+titanic[["age"]] = imp_median.fit_transform(titanic[["age"]]) 
+
 from sklearn.preprocessing import LabelEncoder
 
 le = LabelEncoder()
