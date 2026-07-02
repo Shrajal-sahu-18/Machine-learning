@@ -85,3 +85,5 @@ for split in min_samples_splits:
     print(f"for split {split}, accuracy{acc}")
 
 #Decision Tree With post-prunning
+full_tree = DecisionTreeClassifier(random_state = 42)
+full_tree.fit(X_train,y_train)
