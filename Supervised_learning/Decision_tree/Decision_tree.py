@@ -120,3 +120,5 @@ plot_tree(
 )
 plt.tight_layout(),
 plt.show()
+
+print(best_model.score(X_test,y_test))
