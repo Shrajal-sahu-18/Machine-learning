@@ -81,3 +81,5 @@ min_samples_splits = [10,15,20,25,30]
 for split in min_samples_splits:
     model = DecisionTreeClassifier(max_depth = 6,min_samples_split = split) # Split tabhi hoga jab algorithm ko koi usefull split mile ahar information gain or gini impurity improve nhi ho rahi hai to split ruk jayega
     model.fit(X_train,y_train)
+    acc = model.score(X_test,y_test) # Accuracy score
+    print(f"for split {split}, accuracy{acc}")
