@@ -64,3 +64,17 @@ for depth in max_depths:
     model = DecisionTreeClassifier(max_depth = depth)
     model.fit(X_train,y_train)
     acc = model.score(X_test,y_test) # Accuracy score
+    print(f"for depth{depth}, accuracy{acc}")
+    if depth == 4:
+        plt.figure(figsize = (18,10))
+
+        plot_tree(
+            model,
+            feature_names = X.columns,
+            class_names = ["Died","Survived"],
+            filled = True
+            # max_depth = 4
+        )
+        plt.tight_layout(),
+        plt.show()
+    
