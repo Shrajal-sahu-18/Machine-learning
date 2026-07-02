@@ -106,3 +106,6 @@ for model,alpha in tree:
     if curr_acc > best_acc:
         best_acc = curr_acc
         best_alpha = alpha
+
+best_model = DecisionTreeClassifier(max_depth = 14,ccp_alpha = best_alpha)
+best_model.fit(X_train,y_train)
