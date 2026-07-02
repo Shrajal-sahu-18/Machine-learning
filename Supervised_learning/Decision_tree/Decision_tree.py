@@ -109,3 +109,14 @@ for model,alpha in tree:
 
 best_model = DecisionTreeClassifier(max_depth = 14,ccp_alpha = best_alpha)
 best_model.fit(X_train,y_train)
+plt.figure(figsize = (18,10))
+
+plot_tree(
+    best_model,
+    feature_names = X.columns,
+    class_names = ["Died","Survived"],
+    filled = True
+    # max_depth = 4
+)
+plt.tight_layout(),
+plt.show()
