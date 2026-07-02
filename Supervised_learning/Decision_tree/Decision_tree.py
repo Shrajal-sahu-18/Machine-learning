@@ -91,3 +91,11 @@ full_tree.fit(X_train,y_train)
 path = full_tree.cost_complexity_pruning_path(X_train,y_train)
 ccp_alphas = path.ccp_alphas
 print(ccp_alphas)
+
+tree = []
+for alpha in ccp_alphas:
+    model = DecisionTreeClassifier(random_state = 42,ccp_alpha = alpha)
+    model.fit(X_train,y_train)
+
+
+    tree.append((model,alpha))
