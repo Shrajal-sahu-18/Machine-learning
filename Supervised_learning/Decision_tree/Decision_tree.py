@@ -77,4 +77,4 @@ for depth in max_depths:
         )
         plt.tight_layout(),
         plt.show()
-    
+min_samples_splits = [10,15,20,25,30]
