@@ -83,3 +83,5 @@ for split in min_samples_splits:
     model.fit(X_train,y_train)
     acc = model.score(X_test,y_test) # Accuracy score
     print(f"for split {split}, accuracy{acc}")
+
+#Decision Tree With post-prunning
