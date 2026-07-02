@@ -87,3 +87,7 @@ for split in min_samples_splits:
 #Decision Tree With post-prunning
 full_tree = DecisionTreeClassifier(random_state = 42)
 full_tree.fit(X_train,y_train)
+
+path = full_tree.cost_complexity_pruning_path(X_train,y_train)
+ccp_alphas = path.ccp_alphas
+print(ccp_alphas)
