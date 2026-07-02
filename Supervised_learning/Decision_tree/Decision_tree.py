@@ -63,3 +63,4 @@ max_depths = [2,3,4,5,6,7,8,9,10]
 for depth in max_depths:
     model = DecisionTreeClassifier(max_depth = depth)
     model.fit(X_train,y_train)
+    acc = model.score(X_test,y_test) # Accuracy score
