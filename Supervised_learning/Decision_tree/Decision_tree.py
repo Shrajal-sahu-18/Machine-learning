@@ -99,3 +99,10 @@ for alpha in ccp_alphas:
 
 
     tree.append((model,alpha))
+best_acc = 0
+best_alpha = 0
+for model,alpha in tree:
+    curr_acc = model.score(X_test,y_test)
+    if curr_acc > best_acc:
+        best_acc = curr_acc
+        best_alpha = alpha
