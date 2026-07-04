@@ -25,7 +25,7 @@ X_train,X_test,y_train,y_test = train_test_split(
 
 preprocessor = ColumnTransformer(
     transformers = [
-        ("num",StandardScaler(),num_cols)
+        ("num",StandardScaler(),num_cols),
         ("cate",OneHotEncoder(),cate_cols)
     ]
 )
@@ -48,3 +48,8 @@ pipe = Pipeline(
 pipe.fit(X_train,y_train)
 
 y_pred = pipe.predict(X_test)
+
+
+print("F1 score:", f1_score(y_test, y_pred))
+print("\nClassification Report:\n", classification_report(y_test, y_pred))
+print("\nConfusion Matrix:\n", confusion_matrix(y_test, y_pred))
