@@ -29,3 +29,10 @@ preprocessor = ColumnTransformer(
         ("cate",OneHotEncoder(),cate_cols)
     ]
 )
+
+model = DecisionTreeClassifier(
+    max_depth = 7,
+    min_samples_leaf = 25,
+    class_weight = "balanced",
+    random_state = 42
+)
