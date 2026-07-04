@@ -12,6 +12,7 @@ This repo help us to understand Machine learning in structure format
 - Pipeline
 - Minor project
 - Scracth implementation
+- Decision_Tree
 
 
 ## 🛠️ Technologies Used
