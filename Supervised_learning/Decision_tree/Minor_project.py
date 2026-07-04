@@ -20,5 +20,12 @@ num_cols = X.select_dtypes(include =["int64","float64"]).columns
 cate_cols = X.select_dtypes(include =["category","object","bool"]).columns
 
 X_train,X_test,y_train,y_test = train_test_split(
-    X,y , test_size = 0.3 , random_state = 42
+    X,y , test_size = 0.3 , random_state = 42,stratify = y
+)
+
+preprocessor = ColumnTransformer(
+    transformers = [
+        ("num",StandardScaler(),num_cols)
+        ("cate",OneHotEncoder(),cate_cols)
+    ]
 )
