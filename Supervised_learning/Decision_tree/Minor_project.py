@@ -18,3 +18,7 @@ y = df["Revenue"]
 #Divide category
 num_cols = X.select_dtypes(include =["int64","float64"]).columns
 cate_cols = X.select_dtypes(include =["category","object","bool"]).columns
+
+X_train,X_test,y_train,y_test = train_test_split(
+    X,y , test_size = 0.3 , random_state = 42
+)
