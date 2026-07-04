@@ -36,6 +36,8 @@ supervised_learning/
 ├── Knn_Theorem/
 ├── Minor project/
 ├── Scracth implementation
+├── Decision Tree
+
 
               
 ```
