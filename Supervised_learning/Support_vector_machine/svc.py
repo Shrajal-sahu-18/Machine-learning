@@ -31,3 +31,6 @@ X_test_scaled = scaler.transform(X_test)
 svc = SVC()
 svc.fit(X_train_scaled,y_train)
 y_pred = svc.predict(X_test_scaled)
+
+from sklearn.metrics import accuracy_score
+print("accuracy_score:",accuracy_score(y_test,y_pred))
