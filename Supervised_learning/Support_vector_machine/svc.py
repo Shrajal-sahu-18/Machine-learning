@@ -34,3 +34,12 @@ y_pred = svc.predict(X_test_scaled)
 
 from sklearn.metrics import accuracy_score
 print("accuracy_score:",accuracy_score(y_test,y_pred))
+
+
+
+# Model
+# svc = SVC(kernel = "linear")
+# svc = SVC(kernel = "poly")
+svc = SVC(kernel = "sigmoid")
+svc.fit(X_train_scaled,y_train)
+y_pred = svc.predict(X_test_scaled)
