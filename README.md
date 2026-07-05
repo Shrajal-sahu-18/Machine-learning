@@ -13,6 +13,7 @@ This repo help us to understand Machine learning in structure format
 - Minor project
 - Scracth implementation
 - Decision_Tree
+- Support Vector Machine(SVM)
 
 
 ## 🛠️ Technologies Used
@@ -37,6 +38,7 @@ supervised_learning/
 ├── Minor project/
 ├── Scracth implementation
 ├── Decision Tree
+├── Support Vector Machine
 
 
               
