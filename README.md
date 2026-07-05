@@ -38,6 +38,7 @@ supervised_learning/
 ├── Minor project/
 ├── Scracth implementation
 ├── Decision Tree
+├── Support Vector Machine
 
 
               
