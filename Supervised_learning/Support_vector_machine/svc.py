@@ -10,3 +10,7 @@ df = datasets.load_iris(as_frame = True).frame
 df.head()
 df.isnull().sum()
 df.shape
+
+#Split Dataset
+X = df.drop(["target"],axis = 1)
+y = df["target"]
