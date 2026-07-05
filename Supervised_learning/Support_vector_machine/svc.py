@@ -47,3 +47,12 @@ y_pred = svc.predict(X_test_scaled)
 
 
 print("accuracy_score:",accuracy_score(y_test,y_pred))
+
+
+
+c_vals = [0.5,1,2,3,4,5]
+for cval in c_vals:
+    svc = SVC(kernel = "rbf",C = cval)
+    svc.fit(X_train_scaled,y_train)
+    y_pred = svc.predict(X_test_scaled)
+    print(cval,"accuracy_score:",accuracy_score(y_test,y_pred))
