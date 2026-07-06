@@ -21,3 +21,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 y_scaler = StandardScaler()
 y_train_scaled = y_scaler.fit_transform(y_train.values.reshape(-1,1)).ravel()
 y_test_scaled = y_scaler.transform(y_test.values.reshape(-1,1)).ravel()
+
+#Fit Model
+svr = SVR()
+svr.fit(X_train,y_train_scaled)
