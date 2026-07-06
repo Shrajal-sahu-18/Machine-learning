@@ -9,3 +9,6 @@ from sklearn.metrics import accuracy_score
 
 #Load dataset
 titanic = sns.load_dataset("titanic")
+
+feature = ["pclass","sex","fare","embarked","age"]
+target = ["survived"]
