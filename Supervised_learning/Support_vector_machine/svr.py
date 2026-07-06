@@ -44,3 +44,8 @@ param_grid = {"C":[1,2,5,10,50,100],
               "kernel":["rbf","linear"],
               "epsilon":[0.01,0.1,0.2,0.3,0.5]
 }
+
+#Fit the model
+svr = SVR()
+grid_search = GridSearchCV(svr,param_grid,scoring = "r2",cv = 5)
+grid_search.fit(X_train,y_train_scaled)
