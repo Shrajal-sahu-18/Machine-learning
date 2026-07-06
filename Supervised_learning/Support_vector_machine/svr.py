@@ -31,3 +31,9 @@ y_pred_scaled = svr.predict(X_test)
 
 #R2 Score
 print(r2_score(y_test_scaled,y_pred_scaled))
+
+# Kernel change 
+svr = SVR(kernel = "linear")
+svr.fit(X_train,y_train_scaled)
+y_pred_scaled = svr.predict(X_test)
+print(r2_score(y_test_scaled,y_pred_scaled))
