@@ -13,7 +13,15 @@ This repo help us to understand Machine learning in structure format
 - Minor project
 - Scracth implementation
 - Decision_Tree
+- Decision_Tree_Classifier
+- Decision_Tree_Regressor
 - Support Vector Machine(SVM)
+- Support vector Classifier(SVC)
+- Support Vector Regressor(SVR)
+  
+
+
+   
 
 
 ## 🛠️ Technologies Used
