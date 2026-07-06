@@ -19,3 +19,10 @@ titanic[["age"]] = imp_median.fit_transform(titanic[["age"]])
 
 imp_freq = SimpleImputer(strategy = "most_frequent")
 titanic[["embarked"]] = imp_freq.fit_transform(titanic[["embarked"]])
+
+
+
+#Encode
+le = LabelEncoder()
+titanic["sex"] = le.fit_transform(titanic["sex"])
+titanic["embarked"] = le.fit_transform(titanic["embarked"])
