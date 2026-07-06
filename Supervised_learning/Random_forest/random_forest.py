@@ -16,3 +16,6 @@ target = ["survived"]
 #fill missing value
 imp_median = SimpleImputer(strategy = "median")
 titanic[["age"]] = imp_median.fit_transform(titanic[["age"]])
+
+imp_freq = SimpleImputer(strategy = "most_frequent")
+titanic[["embarked"]] = imp_freq.fit_transform(titanic[["embarked"]])
