@@ -12,3 +12,7 @@ titanic = sns.load_dataset("titanic")
 
 feature = ["pclass","sex","fare","embarked","age"]
 target = ["survived"]
+
+#fill missing value
+imp_median = SimpleImputer(strategy = "median")
+titanic[["age"]] = imp_median.fit_transform(titanic[["age"]])
