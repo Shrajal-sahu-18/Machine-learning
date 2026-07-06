@@ -28,3 +28,6 @@ svr.fit(X_train,y_train_scaled)
 
 # Test Model
 y_pred_scaled = svr.predict(X_test)
+
+#R2 Score
+print(r2_score(y_test_scaled,y_pred_scaled))
