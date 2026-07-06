@@ -25,3 +25,6 @@ y_test_scaled = y_scaler.transform(y_test.values.reshape(-1,1)).ravel()
 #Fit Model
 svr = SVR()
 svr.fit(X_train,y_train_scaled)
+
+# Test Model
+y_pred_scaled = svr.predict(X_test)
