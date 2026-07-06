@@ -8,3 +8,7 @@ from sklearn.preprocessing import StandardScaler
 #load datasets
 df = datasets.load_diabetes(as_frame = True).frame
 df.head()
+
+#Split dataset
+X = df.drop(["target"],axis = 1)
+y = df["target"]
