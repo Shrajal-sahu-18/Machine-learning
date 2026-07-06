@@ -49,3 +49,6 @@ param_grid = {"C":[1,2,5,10,50,100],
 svr = SVR()
 grid_search = GridSearchCV(svr,param_grid,scoring = "r2",cv = 5)
 grid_search.fit(X_train,y_train_scaled)
+
+#Check Best Parameter
+print(grid_search.best_params_)
