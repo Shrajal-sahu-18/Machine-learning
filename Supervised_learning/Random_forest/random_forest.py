@@ -22,7 +22,12 @@ titanic[["embarked"]] = imp_freq.fit_transform(titanic[["embarked"]])
 
 
 
-#Encode
+#Encoder
 le = LabelEncoder()
 titanic["sex"] = le.fit_transform(titanic["sex"])
 titanic["embarked"] = le.fit_transform(titanic["embarked"])
+
+
+#Split dataset
+X = titanic[feature]
+y = titanic["survived"]
