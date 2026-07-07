@@ -45,3 +45,4 @@ y_pred_test = model.predict(X_test)
 y_pred_train = model.predict(X_train)
 
 print("test Accuracy:",accuracy_score(y_test,y_pred_test,))
+print("train Accuracy:",accuracy_score(y_train,y_pred_train,))
