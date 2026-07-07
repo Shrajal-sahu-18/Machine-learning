@@ -41,3 +41,5 @@ X_train,X_test,y_train,y_test = train_test_split(
 #Decision Tree
 model = DecisionTreeClassifier(max_depth = 4)
 model.fit(X_train,y_train)
+y_pred_test = model.predict(X_test)
+y_pred_train = model.predict(X_train)
