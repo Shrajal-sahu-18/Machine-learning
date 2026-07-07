@@ -80,3 +80,4 @@ bagging = BaggingClassifier(
     base_model,
     n_estimators = 201
 )
+bagging.fit(X_train,y_train)
