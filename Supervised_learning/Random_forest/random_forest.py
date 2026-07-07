@@ -69,3 +69,4 @@ rf = RandomForestClassifier(
     max_depth = 4
 
 )
+rf.fit(X_train,y_train)
