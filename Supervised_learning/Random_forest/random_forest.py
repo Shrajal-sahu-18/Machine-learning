@@ -48,3 +48,5 @@ print("test Accuracy:",accuracy_score(y_test,y_pred_test,))
 print("train Accuracy:",accuracy_score(y_train,y_pred_train,))
 
 from sklearn.tree import plot_tree
+
+plt.figure(figsize = (18,10))
