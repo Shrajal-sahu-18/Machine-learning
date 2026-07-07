@@ -72,3 +72,4 @@ rf = RandomForestClassifier(
 rf.fit(X_train,y_train)
 y_pred = rf.predict(X_test)
 print("accuracy_score:",accuracy_score(y_test,y_pred))
+print("oob_score:",rf.oob_score_)
