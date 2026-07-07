@@ -61,3 +61,11 @@ plt.tight_layout()
 
 # Random Forest
 from sklearn.ensemble import RandomForestClassifier
+rf = RandomForestClassifier(
+    n_estimators = 201,
+    oob_score = True,
+    bootstrap = True,
+    random_state = 42,
+    max_depth = 4
+
+)
