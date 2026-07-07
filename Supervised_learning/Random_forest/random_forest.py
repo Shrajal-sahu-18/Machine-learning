@@ -75,3 +75,8 @@ print("accuracy_score:",accuracy_score(y_test,y_pred))
 print("oob_score:",rf.oob_score_)
 
 from sklearn.ensemble import BaggingClassifier
+base_model = DecisionTreeClassifier()
+bagging = BaggingClassifier(
+    base_model,
+    n_estimators = 201
+)
