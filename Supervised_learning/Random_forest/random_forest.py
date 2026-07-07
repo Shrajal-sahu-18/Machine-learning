@@ -70,3 +70,4 @@ rf = RandomForestClassifier(
 
 )
 rf.fit(X_train,y_train)
+y_pred = rf.predict(X_test)
