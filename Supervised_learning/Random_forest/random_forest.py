@@ -58,3 +58,6 @@ plot_tree(
     
 )
 plt.tight_layout()
+
+# Random Forest
+from sklearn.ensemble import RandomForestClassifier
