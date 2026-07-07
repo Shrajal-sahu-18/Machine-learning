@@ -81,3 +81,4 @@ bagging = BaggingClassifier(
     n_estimators = 201
 )
 bagging.fit(X_train,y_train)
+y_pred = bagging.predict(X_test)
