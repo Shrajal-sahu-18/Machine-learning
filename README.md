@@ -19,6 +19,7 @@ This repo help us to understand Machine learning in structure format
 - Support vector Classifier(SVC)
 - Support Vector Regressor(SVR)
 - Bagging
+- Bagging Classifier
 - Random Forest
 - 
   
