@@ -22,6 +22,7 @@ This repo help us to understand Machine learning in structure format
 - Bagging Classifier
 - Random Forest
 - Boosting
+- Gradient Boosting
   
 
 
