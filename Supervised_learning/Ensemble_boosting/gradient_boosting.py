@@ -25,3 +25,4 @@ ghr = GradientBoostingRegressor(
 
 ghr.fit(X_train,y_train)
 y_pred = ghr.predict(X_test)
+print("r2:",r2_score(y_test,y_pred))
