@@ -22,3 +22,5 @@ ghr = GradientBoostingRegressor(
     subsample = 0.8,
     random_state = 42
 )
+
+ghr.fit(X_train,y_train)
