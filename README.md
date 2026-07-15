@@ -54,6 +54,7 @@ supervised_learning/
 ├── Decision Tree
 ├── Support Vector Machine
 ├── Random Forest
+├── Ensemble_boosting
 
 
               
