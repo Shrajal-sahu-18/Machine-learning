@@ -14,3 +14,11 @@ X_train,X_test,y_train,y_test = train_test_split(
 )
 #import gradientboost regresor
 from sklearn.ensemble import GradientBoostingRegressor
+
+ghr = GradientBoostingRegressor(
+    n_estimators = 200,
+    learning_rate = 0.05,
+    max_depth = 3,
+    subsample = 0.8,
+    random_state = 42
+)
