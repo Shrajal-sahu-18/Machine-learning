@@ -24,3 +24,4 @@ ghr = GradientBoostingRegressor(
 )
 
 ghr.fit(X_train,y_train)
+y_pred = ghr.predict(X_test)
