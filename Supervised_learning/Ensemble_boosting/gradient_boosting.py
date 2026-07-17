@@ -51,3 +51,4 @@ gbc = GradientBoostingClassifier(
     random_state = 42
 )
 gbc.fit(X_train,y_train)
+y_pred = gbc.predict(X_test)
