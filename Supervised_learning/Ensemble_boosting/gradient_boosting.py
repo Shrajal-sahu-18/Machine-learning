@@ -50,3 +50,4 @@ gbc = GradientBoostingClassifier(
     max_depth = 3,
     random_state = 42
 )
+gbc.fit(X_train,y_train)
