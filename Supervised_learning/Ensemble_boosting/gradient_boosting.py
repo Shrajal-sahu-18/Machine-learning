@@ -52,3 +52,4 @@ gbc = GradientBoostingClassifier(
 )
 gbc.fit(X_train,y_train)
 y_pred = gbc.predict(X_test)
+print("Accuracy_score:",accuracy_score(y_test,y_pred))
