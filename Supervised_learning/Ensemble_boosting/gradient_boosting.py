@@ -26,3 +26,8 @@ ghr = GradientBoostingRegressor(
 ghr.fit(X_train,y_train)
 y_pred = ghr.predict(X_test)
 print("r2:",r2_score(y_test,y_pred))
+
+
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
