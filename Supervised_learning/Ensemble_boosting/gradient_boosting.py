@@ -31,3 +31,10 @@ print("r2:",r2_score(y_test,y_pred))
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+
+X,y = make_classification(
+    n_samples = 500,
+    n_features = 20,
+    n_informative = 10,
+    random_state = 42
+)
