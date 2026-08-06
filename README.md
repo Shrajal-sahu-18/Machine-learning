@@ -22,8 +22,9 @@ This repo help us to understand Machine learning in structure format
 - Bagging Classifier
 - Random Forest
 - Boosting
-- Gradient Boosting
-- AdaBoost
+- Gradient Boosting(Regressor,Classifier)
+- AdaBoost (ClassiFier,Regressor)
+- 
   
 
 
