@@ -30,3 +30,5 @@ abc = AdaBoostClassifier(
 )
 
 abc.fit(X_train,y_train)
+
+y_pred = abc.predict(X_test)
