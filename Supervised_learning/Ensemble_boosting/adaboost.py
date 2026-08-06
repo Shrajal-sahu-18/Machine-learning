@@ -38,3 +38,7 @@ print("accuracy_score",accuracy_score(y_test,y_pred))
 print("classification_report",classification_report(y_test,y_pred))
 
 # regressor
+from sklearn.datasets import make_regression
+from sklearn.ensemble import AdaBoostRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import r2_score
