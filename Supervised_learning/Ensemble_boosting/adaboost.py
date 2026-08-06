@@ -32,3 +32,6 @@ abc = AdaBoostClassifier(
 abc.fit(X_train,y_train)
 
 y_pred = abc.predict(X_test)
+
+print("accuracy_score",accuracy_score(y_test,y_pred))
+print("classification_report",classification_report(y_test,y_pred))
