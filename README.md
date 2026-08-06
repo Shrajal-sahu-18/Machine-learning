@@ -23,7 +23,7 @@ This repo help us to understand Machine learning in structure format
 - Random Forest
 - Boosting
 - Gradient Boosting(Regressor,Classifier)
-- AdaBoost
+- AdaBoost (ClassiFier,Regressor)
 - 
   
 
