@@ -1,3 +1,4 @@
+#classifier
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
@@ -35,3 +36,5 @@ y_pred = abc.predict(X_test)
 
 print("accuracy_score",accuracy_score(y_test,y_pred))
 print("classification_report",classification_report(y_test,y_pred))
+
+# regressor
