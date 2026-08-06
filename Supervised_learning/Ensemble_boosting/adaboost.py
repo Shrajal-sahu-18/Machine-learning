@@ -1,3 +1,5 @@
+from sklearn.ensemble import AdaBoostClassifier
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score,classification_report
