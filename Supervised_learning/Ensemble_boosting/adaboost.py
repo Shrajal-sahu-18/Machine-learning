@@ -28,3 +28,5 @@ abc = AdaBoostClassifier(
     n_estimators = 600,
     random_state = 42
 )
+
+abc.fit(X_train,y_train)
