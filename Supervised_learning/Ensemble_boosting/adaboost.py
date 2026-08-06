@@ -42,3 +42,10 @@ from sklearn.datasets import make_regression
 from sklearn.ensemble import AdaBoostRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
+
+X,y = make_regression(
+    n_samples = 1000,
+    n_features = 20,
+    noise = 15,
+    random_state = 42
+)
