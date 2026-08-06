@@ -57,3 +57,10 @@ X_train,X_test,y_train,y_test = train_test_split(
 base_model = DecisionTreeRegressor(
     max_depth = 3
 )
+
+
+abr = AdaBoostRegressor(
+    estimator = base_model,
+    n_estimators = 200,
+    random_state = 42
+)
