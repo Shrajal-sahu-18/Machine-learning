@@ -64,3 +64,5 @@ abr = AdaBoostRegressor(
     n_estimators = 200,
     random_state = 42
 )
+
+abr.fit(X_train,y_train)
