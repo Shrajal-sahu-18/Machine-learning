@@ -22,3 +22,9 @@ X_train,X_test,y_train,y_test = train_test_split(
 base_model = DecisionTreeClassifier(
     max_depth = 3
 )
+
+abc = AdaBoostClassifier(
+    estimator = base_model,
+    n_estimators = 600,
+    random_state = 42
+)
