@@ -68,3 +68,5 @@ abr = AdaBoostRegressor(
 abr.fit(X_train,y_train)
 
 y_pred = abr.predict(X_test)
+
+print("R2_score",r2_score(y_test,y_pred))
