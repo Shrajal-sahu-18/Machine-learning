@@ -53,3 +53,10 @@ X,y = make_regression(
 X_train,X_test,y_train,y_test = train_test_split(
     X,y,test_size = 0.3,random_state = 42
 )
+
+xgb_rgb = xgb.XGBRegressor(
+    n_estimators = 7700,
+    max_depth = 3,
+    learning_rate = 0.09,
+    random_state = 42
+)
