@@ -28,3 +28,6 @@ xgb_clf = xgb.XGBClassifier(
     eval_metric = "logloss",
     random_state = 42
 )
+
+#fit the model
+xgb_clf.fit(X_train,y_train)
