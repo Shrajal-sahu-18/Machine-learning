@@ -34,3 +34,6 @@ xgb_clf.fit(X_train,y_train)
 
 #Test the model
 y_pred = xgb_clf.predict(X_test)
+
+#test the accuracy 
+print("Accuracy_Score",accuracy_score(y_test,y_pred))
