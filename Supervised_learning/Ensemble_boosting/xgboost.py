@@ -63,3 +63,6 @@ xgb_rgb = xgb.XGBRegressor(
 
 
 xgb_rgb.fit(X_train,y_train)
+
+y_pred = xgb_rgb.predict(X_test)
+y_preed = xgb_rgb.predict(X_train)
