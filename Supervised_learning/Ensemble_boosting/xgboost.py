@@ -31,3 +31,6 @@ xgb_clf = xgb.XGBClassifier(
 
 #fit the model
 xgb_clf.fit(X_train,y_train)
+
+#Test the model
+y_pred = xgb_clf.predict(X_test)
