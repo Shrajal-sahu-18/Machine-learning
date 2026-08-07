@@ -60,3 +60,6 @@ xgb_rgb = xgb.XGBRegressor(
     learning_rate = 0.09,
     random_state = 42
 )
+
+
+xgb_rgb.fit(X_train,y_train)
