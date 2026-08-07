@@ -66,3 +66,6 @@ xgb_rgb.fit(X_train,y_train)
 
 y_pred = xgb_rgb.predict(X_test)
 y_preed = xgb_rgb.predict(X_train)
+
+print("r2_score",r2_score(y_test,y_pred))
+print("r2_score_train",r2_score(y_train,y_preed))
