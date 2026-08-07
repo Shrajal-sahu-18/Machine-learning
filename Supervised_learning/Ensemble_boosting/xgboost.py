@@ -43,3 +43,10 @@ from sklearn.datasets import make_regression
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from sklearn.model_selection import train_test_split
 import xgboost as xgb
+
+X,y = make_regression(
+    n_samples = 1000,
+    n_features = 20,
+    n_informative = 10,
+   
+)
