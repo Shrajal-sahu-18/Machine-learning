@@ -37,3 +37,9 @@ y_pred = xgb_clf.predict(X_test)
 
 #test the accuracy 
 print("Accuracy_Score",accuracy_score(y_test,y_pred))
+
+#regressor
+from sklearn.datasets import make_regression
+from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
+from sklearn.model_selection import train_test_split
+import xgboost as xgb
