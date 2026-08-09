@@ -20,3 +20,14 @@ X_train,X_test,y_train,y_test = train_test_split(
 lr = LinearRegression()
 svr = SVR()
 dtr = DecisionTreeRegressor(max_depth = 3)
+
+
+
+voting_r = VotingRegressor(
+    estimators = [
+        ("lr",lr),
+        ("svr",svr),
+        ("dtr",dtr)
+    ]
+    
+)
