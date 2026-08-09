@@ -40,3 +40,5 @@ voting_clf = VotingClassifier(
 
 #Fit The Model
 voting_clf.fit(X_train,y_train)
+#Test the model
+y_pred = voting_clf.predict(X_test)
