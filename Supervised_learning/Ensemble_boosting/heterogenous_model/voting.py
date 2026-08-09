@@ -26,3 +26,5 @@ X_train,X_test,y_train,y_test = train_test_split(
 lr = LogisticRegression()
 #Support vector classifier
 svc = SVC()
+#Decision Tree Classifier
+dtc = DecisionTreeClassifier(max_septh = 3)
