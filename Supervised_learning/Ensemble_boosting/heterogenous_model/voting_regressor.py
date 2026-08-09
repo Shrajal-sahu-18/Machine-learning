@@ -35,3 +35,6 @@ voting_r = VotingRegressor(
 voting_r.fit(X_train,y_train)
 
 y_pred = voting_r.predict(X_test)
+
+from sklearn.metrics import r2_score
+print("r2_score",r2_score(y_test,y_pred))
