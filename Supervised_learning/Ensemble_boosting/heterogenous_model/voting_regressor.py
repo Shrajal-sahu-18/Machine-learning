@@ -31,3 +31,5 @@ voting_r = VotingRegressor(
     ]
     
 )
+
+voting_r.fit(X_train,y_train)
