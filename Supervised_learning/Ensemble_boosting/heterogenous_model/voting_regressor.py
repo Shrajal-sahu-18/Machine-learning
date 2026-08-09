@@ -33,3 +33,5 @@ voting_r = VotingRegressor(
 )
 
 voting_r.fit(X_train,y_train)
+
+y_pred = voting_r.predict(X_test)
