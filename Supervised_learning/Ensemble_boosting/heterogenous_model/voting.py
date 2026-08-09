@@ -28,3 +28,12 @@ lr = LogisticRegression()
 svc = SVC()
 #Decision Tree Classifier
 dtc = DecisionTreeClassifier(max_septh = 3)
+
+# VotingClassifier
+voting_clf = VotingClassifier(
+    estimators = [
+        ("lr",lr),
+        ("SVC",svc),
+        ("DTC",dtc)
+    ]
+)
