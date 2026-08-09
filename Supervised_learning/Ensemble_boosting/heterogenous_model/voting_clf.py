@@ -45,3 +45,4 @@ y_pred = voting_clf.predict(X_test)
 #Evaluation metrics
 print("Accuracy_score",accuracy_score(y_test,y_pred))
 print("Classification report",classification_report(y_test,y_pred))
+
