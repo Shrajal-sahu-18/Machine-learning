@@ -37,3 +37,6 @@ voting_clf = VotingClassifier(
         ("DTC",dtc)
     ]
 )
+
+#Fit The Model
+voting_clf.fit(X_train,y_train)
