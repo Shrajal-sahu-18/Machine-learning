@@ -11,3 +11,8 @@ df = pd.read_csv("novagen_dataset.csv")
 #Split dataset
 X = df.drop(columns = ["Target"])
 y = df["Target"]
+
+# Train Test Split
+X_train,X_test,y_train,y_test = train_test_split(
+    X , y ,test_size = 0.3 , random_state = 42
+)
