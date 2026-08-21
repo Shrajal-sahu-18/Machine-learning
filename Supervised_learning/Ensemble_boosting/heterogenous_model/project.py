@@ -31,3 +31,6 @@ log_reg = LogisticRegression(
 
 # Fit the data
 log_reg.fit(X_train_scaled,y_train)
+
+# Test data 
+y_pred_lr = log_reg.predict(X_test_scaled)
