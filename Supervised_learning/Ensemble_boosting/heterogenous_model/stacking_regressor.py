@@ -20,3 +20,15 @@ X_train,X_test,y_train,y_test = train_test_split(
 lr = LinearRegression()
 svr = SVR()
 dtr = DecisionTreeRegressor()
+
+
+
+sr = StackingRegressor(
+    estimators = [
+        ("lr",lr),
+        ("svr",svr),
+        ("dtr",dtr)
+    ],
+    cv = 5
+    
+)
