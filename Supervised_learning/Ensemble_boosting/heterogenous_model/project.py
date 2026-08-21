@@ -37,3 +37,4 @@ y_pred_lr = log_reg.predict(X_test_scaled)
 
 # Evaluation metrics
 print("recall_score",recall_score(y_test,y_pred_lr))
+print("Classification_report",classification_report(y_test,y_pred_lr))
