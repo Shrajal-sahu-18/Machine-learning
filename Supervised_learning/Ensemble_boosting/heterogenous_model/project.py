@@ -28,3 +28,6 @@ log_reg = LogisticRegression(
     solver = "liblinear",
     max_iter = 1000
 ) 
+
+# Fit the data
+log_reg.fit(X_train_scaled,y_train)
