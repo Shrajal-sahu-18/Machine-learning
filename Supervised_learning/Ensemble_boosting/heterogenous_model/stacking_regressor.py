@@ -32,3 +32,6 @@ sr = StackingRegressor(
     cv = 5
     
 )
+
+
+sr.fit(X_train,y_train)
