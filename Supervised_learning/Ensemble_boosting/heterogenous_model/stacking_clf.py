@@ -33,3 +33,6 @@ stacking_clf = StackingClassifier(
     final_estimator = meta_model
     
 )
+
+
+stacking_clf.fit(X_train,y_train)
