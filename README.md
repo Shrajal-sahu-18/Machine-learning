@@ -26,7 +26,7 @@ This repo help us to understand Machine learning in structure format
 - AdaBoost (ClassiFier,Regressor)
 - Xgboost(Classifier,Regressor)
 - Voting(Classifier,Regressor)
-- Stacking
+- Stacking(Classifier,Regressor)
   
 
 
