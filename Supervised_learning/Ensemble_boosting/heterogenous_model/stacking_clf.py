@@ -20,3 +20,16 @@ X_train,X_test,y_train,y_test = train_test_split(
 lr = LogisticRegression()
 svc = SVC()
 dtc = DecisionTreeClassifier(max_depth = 4)
+
+
+meta_model = LogisticRegression()
+stacking_clf = StackingClassifier(
+    estimators = [
+        ("lr",lr),
+        ("svc",svc),
+        ("dtc",dtc)
+    ],
+    cv = 5,
+    final_estimator = meta_model
+    
+)
