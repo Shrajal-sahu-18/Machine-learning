@@ -34,3 +34,6 @@ log_reg.fit(X_train_scaled,y_train)
 
 # Test data 
 y_pred_lr = log_reg.predict(X_test_scaled)
+
+# Evaluation metrics
+print("recall_score",recall_score(y_test,y_pred_lr))
