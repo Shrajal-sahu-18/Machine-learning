@@ -21,3 +21,10 @@ X_train,X_test,y_train,y_test = train_test_split(
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
+
+# Logistic Regression with regularization
+log_reg = LogisticRegression(
+    penalty = "l2",
+    solver = "liblinear",
+    max_iter = 1000
+) 
