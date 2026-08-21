@@ -38,3 +38,6 @@ sr.fit(X_train,y_train)
 
 
 y_pred = sr.predict(X_test)
+
+
+print("R2_score",r2_score(y_test,y_pred))
