@@ -35,3 +35,6 @@ sr = StackingRegressor(
 
 
 sr.fit(X_train,y_train)
+
+
+y_pred = sr.predict(X_test)
