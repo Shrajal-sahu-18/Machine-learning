@@ -36,3 +36,5 @@ stacking_clf = StackingClassifier(
 
 
 stacking_clf.fit(X_train,y_train)
+
+y_pred = stacking_clf.predict(X_test)
