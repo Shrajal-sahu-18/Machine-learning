@@ -64,3 +64,4 @@ rfc = RandomForestClassifier(
     max_depth = None,
     random_state = 42
 )
+rfc.fit(X_train , y_train)
