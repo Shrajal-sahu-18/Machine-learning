@@ -59,3 +59,8 @@ print("Classification_report",classification_report(y_test,y_pred))
 print("recall_score",recall_score(y_test,y_pred))
 
 # Model 3 - RandomForestclassifier
+rfc = RandomForestClassifier(
+    n_estimators = 200,
+    max_depth = None,
+    random_state = 42
+)
