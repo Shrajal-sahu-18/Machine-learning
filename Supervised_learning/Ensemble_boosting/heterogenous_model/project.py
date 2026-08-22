@@ -51,3 +51,4 @@ knn_model = KNeighborsClassifier(
     n_neighbors = 3,
     metric = "euclidean"
 )
+knn_model.fit(X_train_scaled,y_train)
