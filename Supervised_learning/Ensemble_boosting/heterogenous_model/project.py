@@ -47,3 +47,7 @@ print("Accuracy_Score",accuracy_score(y_test,y_pred_lr))
 
 
 # Model 2 -Knn
+knn_model = KNeighborsClassifier(
+    n_neighbors = 3,
+    metric = "euclidean"
+)
