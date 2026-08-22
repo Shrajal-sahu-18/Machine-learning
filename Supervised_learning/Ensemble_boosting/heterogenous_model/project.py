@@ -97,3 +97,5 @@ voting_clf = VotingClassifier(
 )
 voting_clf.fit(X_train_scaled,y_train)
 y_pred_vote = voting_clf.predict(X_test_scaled)
+
+print("Voting Classifier Accuracy:", accuracy_score(y_test, y_pred_vote))
