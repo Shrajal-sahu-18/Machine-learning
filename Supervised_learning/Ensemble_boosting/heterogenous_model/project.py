@@ -84,3 +84,4 @@ y_pred = gb.predict(X_test)
 
 print("Gradient Boosting Accuracy:", accuracy_score(y_test, y_pred))
 print("Gradient Boosting Recall:", recall_score(y_test, y_pred))
+print(classification_report(y_test, y_pred))
