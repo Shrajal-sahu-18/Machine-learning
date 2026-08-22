@@ -79,3 +79,4 @@ gb = GradientBoostingClassifier(
     random_state = 42
     
 )
+gb.fit(X_train,y_train)
