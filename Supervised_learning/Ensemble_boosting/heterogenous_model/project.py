@@ -100,3 +100,4 @@ y_pred_vote = voting_clf.predict(X_test_scaled)
 
 print("Voting Classifier Accuracy:", accuracy_score(y_test, y_pred_vote))
 print("Voting Classifier Recall:", recall_score(y_test, y_pred_vote))
+print(classification_report(y_test, y_pred_vote))
