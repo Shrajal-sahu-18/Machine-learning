@@ -66,3 +66,5 @@ rfc = RandomForestClassifier(
 )
 rfc.fit(X_train , y_train)
 y_pred = rfc.predict(X_test)
+
+print("RandomForestClassifier Accuracy",accuracy_score(y_test,y_pred))
