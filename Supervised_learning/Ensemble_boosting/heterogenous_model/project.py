@@ -80,3 +80,4 @@ gb = GradientBoostingClassifier(
     
 )
 gb.fit(X_train,y_train)
+y_pred = gb.predict(X_test)
