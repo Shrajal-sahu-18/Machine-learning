@@ -65,3 +65,4 @@ rfc = RandomForestClassifier(
     random_state = 42
 )
 rfc.fit(X_train , y_train)
+y_pred = rfc.predict(X_test)
