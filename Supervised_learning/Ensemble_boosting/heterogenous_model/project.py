@@ -53,3 +53,5 @@ knn_model = KNeighborsClassifier(
 )
 knn_model.fit(X_train_scaled,y_train)
 y_pred = knn_model.predict(X_test_scaled)
+
+print("Accuracy_score",accuracy_score(y_test,y_pred))
