@@ -57,3 +57,5 @@ y_pred = knn_model.predict(X_test_scaled)
 print("Accuracy_score",accuracy_score(y_test,y_pred))
 print("Classification_report",classification_report(y_test,y_pred))
 print("recall_score",recall_score(y_test,y_pred))
+
+# Model 3 - RandomForestclassifier
