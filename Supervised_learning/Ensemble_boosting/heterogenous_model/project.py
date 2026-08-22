@@ -96,3 +96,4 @@ voting_clf = VotingClassifier(
     voting = "soft"
 )
 voting_clf.fit(X_train_scaled,y_train)
+y_pred_vote = voting_clf.predict(X_test_scaled)
