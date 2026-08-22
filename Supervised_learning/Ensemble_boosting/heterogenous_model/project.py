@@ -55,3 +55,4 @@ knn_model.fit(X_train_scaled,y_train)
 y_pred = knn_model.predict(X_test_scaled)
 
 print("Accuracy_score",accuracy_score(y_test,y_pred))
+print("Classification_report",classification_report(y_test,y_pred))
