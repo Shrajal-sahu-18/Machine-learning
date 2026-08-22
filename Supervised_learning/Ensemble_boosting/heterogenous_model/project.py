@@ -87,3 +87,11 @@ print("Gradient Boosting Recall:", recall_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
 # Model 5 - Votting Classifier
+voting_clf = VotingClassifier(
+    estimators  = [
+        ("lr",LogisticRegression(max_iter = 150 , solver = "liblinear")),
+        ("knn",KNeighborsClassifier(n_neighbors = 5)),
+        ("rfc",RandomForestClassifier(n_estimators = 200, random_state = 42))
+    ],
+    voting = "soft"
+)
