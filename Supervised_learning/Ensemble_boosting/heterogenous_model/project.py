@@ -72,3 +72,10 @@ print("RandomForestClassifier Recall",recall_score(y_test,y_pred))
 print("RandomForestClassifier Classification Report",classification_report(y_test,y_pred))
 
 # Model 4 - Gradient Boosting Classifier
+gb = GradientBoostingClassifier(
+    n_estimators = 150,
+    learning_rate = 0.1,
+    max_depth = 3,
+    random_state = 42
+    
+)
