@@ -70,3 +70,5 @@ y_pred = rfc.predict(X_test)
 print("RandomForestClassifier Accuracy",accuracy_score(y_test,y_pred))
 print("RandomForestClassifier Recall",recall_score(y_test,y_pred))
 print("RandomForestClassifier Classification Report",classification_report(y_test,y_pred))
+
+# Model 4 - Gradient Boosting Classifier
