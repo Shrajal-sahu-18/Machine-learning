@@ -9,4 +9,12 @@ X,y = make_blobs(
     random_state = 42
 )
 
+#scatter plot
 sns.scatterplot(x = X[:,0],y = X[:,1])
+
+# kmeans model
+k = 4
+kmeans = KMeans(
+    n_clusters = k,
+    random_state = 42
+)
