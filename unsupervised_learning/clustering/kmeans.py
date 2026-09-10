@@ -2,3 +2,9 @@ import seaborn as sns
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
 
+X,y = make_blobs(
+    n_samples = 1000,
+    n_features = 2,
+    centers = 4,
+    random_state = 42
+)
