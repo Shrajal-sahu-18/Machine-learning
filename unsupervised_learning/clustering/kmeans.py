@@ -18,3 +18,5 @@ kmeans = KMeans(
     n_clusters = k,
     random_state = 42
 )
+
+labels = kmeans.fit_predict(X)
