@@ -8,3 +8,5 @@ X,y = make_blobs(
     centers = 4,
     random_state = 42
 )
+
+sns.scatterplot(x = X[:,0],y = X[:,1])
