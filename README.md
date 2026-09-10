@@ -2,7 +2,9 @@
 This repository contains various Machine Learning topic, examples, and minor assianment project created to improve understanding of ML concepts and algorithms.
 This repo help us to understand Machine learning in structure format
 
-## 📌 Contents
+## 📌 Contents 
+## Supervised Learning
+```
 - Linear Regression
 - Logistic Regression
 - Naive_bayes_theorem
@@ -27,8 +29,13 @@ This repo help us to understand Machine learning in structure format
 - Xgboost(Classifier,Regressor)
 - Voting(Classifier,Regressor)
 - Stacking(Classifier,Regressor)
-  
 
+```
+## Unspervised Learning
+```
+-
+  
+```
 
    
 
