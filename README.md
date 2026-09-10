@@ -3,7 +3,7 @@ This repository contains various Machine Learning topic, examples, and minor ass
 This repo help us to understand Machine learning in structure format
 
 ## 📌 Contents 
-# Supervised Learning
+## Supervised Learning
 - Linear Regression
 - Logistic Regression
 - Naive_bayes_theorem
