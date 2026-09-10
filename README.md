@@ -4,6 +4,7 @@ This repo help us to understand Machine learning in structure format
 
 ## 📌 Contents 
 ## Supervised Learning
+```
 - Linear Regression
 - Logistic Regression
 - Naive_bayes_theorem
@@ -29,6 +30,7 @@ This repo help us to understand Machine learning in structure format
 - Voting(Classifier,Regressor)
 - Stacking(Classifier,Regressor)
 
+```
 ## Unspervised Learning
 -
   
