@@ -21,3 +21,10 @@ X_scaled = scaler.fit_transform(X)
 #Optional - dimensionality reduction using PCA
 pca = PCA(n_components = 2)
 pca_data = pca.fit_transform(X_scaled)
+
+#Elbow method
+wcss = []
+for k in range(1,11):
+    kmeans = KMeans(n_clusters = k)
+    kmeans.fit_predict(pca_data)
+    wcss.append(kmeans.inertia_)
