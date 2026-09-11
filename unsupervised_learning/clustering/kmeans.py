@@ -21,4 +21,6 @@ kmeans = KMeans(
 
 labels = kmeans.fit_predict(X)
 
-print(sns.scatterplot(x = X[:,0],y = X[:,1],c = labels))
+(sns.scatterplot(x = X[:,0],y = X[:,1],c = labels))
+
+#chossing k value with Elbow method
