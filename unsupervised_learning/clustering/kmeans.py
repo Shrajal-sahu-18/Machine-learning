@@ -36,3 +36,5 @@ sns.lineplot(x = range(1,21),y = wcss,marker = 'o')
 
 #kneelocator
 knee = KneeLocator(range(1,21),wcss,curve = "convex",direction = "decreasing")
+print(knee.knee)
+print(knee.elbow)
