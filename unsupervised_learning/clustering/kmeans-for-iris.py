@@ -8,3 +8,6 @@ iris = load_iris()
 
 X = iris.data
 y = iris.target
+
+# Visualize
+sns.scatterplot(x = X[:,0],y = X[:,1],c = y)
