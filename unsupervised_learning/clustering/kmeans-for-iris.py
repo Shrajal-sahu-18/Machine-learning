@@ -28,3 +28,5 @@ for k in range(1,11):
     kmeans = KMeans(n_clusters = k)
     kmeans.fit_predict(pca_data)
     wcss.append(kmeans.inertia_)
+
+sns.lineplot(x = range(1,11),y = wcss,marker = 'o')
