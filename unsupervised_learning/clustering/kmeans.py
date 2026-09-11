@@ -33,3 +33,6 @@ for k in range(1,21):
 print(wcss)
 
 sns.lineplot(x = range(1,21),y = wcss,marker = 'o')
+
+#kneelocator
+knee = KneeLocator(range(1,21),wcss,curve = "convex",direction = "decreasing")
