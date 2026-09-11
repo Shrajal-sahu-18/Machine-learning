@@ -2,6 +2,7 @@ import seaborn as sns
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
 from kneed import KneeLocator
+from sklearn.metrics import silhouette_score
 
 X,y = make_blobs(
     n_samples = 1000,
