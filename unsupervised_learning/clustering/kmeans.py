@@ -39,3 +39,11 @@ sns.lineplot(x = range(1,21),y = wcss,marker = 'o')
 knee = KneeLocator(range(1,21),wcss,curve = "convex",direction = "decreasing")
 print(knee.knee)
 print(knee.elbow)
+
+#silhouette score
+ss = []
+for k in range(2,21):
+    kmeans = KMeans(n_clusters = k)
+    labels = kmeans.fit_predict(X)
+    score = silhouette_score(X,labels)
+    ss.append(score)
