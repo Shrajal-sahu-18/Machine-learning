@@ -24,3 +24,9 @@ labels = kmeans.fit_predict(X)
 (sns.scatterplot(x = X[:,0],y = X[:,1],c = labels))
 
 #chossing k value with Elbow method
+wcss = []
+for k in range(1,21):
+    kmeans = KMeans(n_clusters = k)
+    kmeans.fit_predict(X)
+    wcss.append(kmeans.inertia_)
+print(wcss)
