@@ -34,3 +34,4 @@ sns.lineplot(x = range(1,11),y = wcss,marker = 'o')
 #kmeans
 kmeans = KMeans(n_clusters = 3,random_state = 42)
 labels = kmeans.fit_predict(pca_data)
+sns.scatterplot(x = pca_data[:,0],y = pca_data[:,1],c= labels)
