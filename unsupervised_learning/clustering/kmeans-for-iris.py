@@ -2,6 +2,7 @@ import seaborn as sns
 import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 
 #Load dataset
