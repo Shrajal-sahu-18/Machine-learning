@@ -30,3 +30,5 @@ for k in range(1,21):
     kmeans.fit_predict(X)
     wcss.append(kmeans.inertia_)
 print(wcss)
+
+sns.lineplot(x = range(1,21),y = wcss,marker = 'o')
