@@ -1,6 +1,7 @@
 import seaborn as sns 
 import pandas as pd
 from sklearn.datasets import load_iris
+from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
 #Load dataset
