@@ -47,3 +47,5 @@ for k in range(2,21):
     labels = kmeans.fit_predict(X)
     score = silhouette_score(X,labels)
     ss.append(score)
+
+sns.lineplot(x = range(2,21),y = ss ,marker = 'o')
