@@ -31,3 +31,8 @@ plt.title("dendrogram for hierarichical clustering")
 
 # Clustering
 from sklearn.cluster import AgglomerativeClustering
+
+agg = AgglomerativeClustering(
+    n_clusters = 2
+)
+labels = agg.fit_predict(X_scaled)
