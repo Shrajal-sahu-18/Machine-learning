@@ -20,3 +20,4 @@ dbscan = DBSCAN(
 )
 
 dbscan.fit(X_scaled)
+labels = dbscan.fit_predict(X_scaled)
