@@ -9,3 +9,5 @@ y = iris.target
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
+
+sns.scatterplot(x = X_scaled[:,0],y = X_scaled[:,2])
