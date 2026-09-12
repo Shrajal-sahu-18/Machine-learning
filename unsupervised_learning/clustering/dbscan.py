@@ -30,3 +30,6 @@ X,y = make_moons(
     noise = 0.05,
     random_state = 42
 )
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
