@@ -3,3 +3,6 @@ import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 
 iris = load_iris()
+
+X = iris.data
+y = iris.target
