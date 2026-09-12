@@ -14,3 +14,7 @@ sns.scatterplot(x = X_scaled[:,0],y = X_scaled[:,2])
 
 #DBSCAN
 from sklearn.cluster import DBSCAN
+dbscan = DBSCAN(
+    eps = 0.8,
+    min_samples = 5
+)
