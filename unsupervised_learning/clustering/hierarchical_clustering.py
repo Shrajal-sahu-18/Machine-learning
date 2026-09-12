@@ -28,3 +28,6 @@ dendrogram(Z)
 plt.xlabel("samples")
 plt.ylabel("distance")
 plt.title("dendrogram for hierarichical clustering")
+
+# Clustering
+from sklearn.cluster import AgglomerativeClustering
