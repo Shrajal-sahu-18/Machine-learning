@@ -40,3 +40,4 @@ dbscan = DBSCAN(
     min_samples = 5
 )
 labels = dbscan.fit_predict(X_scaled)
+sns.scatterplot(x = X_scaled[:,0],y = X_scaled[:,1],c = labels)
