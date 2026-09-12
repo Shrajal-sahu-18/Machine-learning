@@ -18,3 +18,5 @@ dbscan = DBSCAN(
     eps = 0.8,
     min_samples = 5
 )
+
+dbscan.fit(X_scaled)
