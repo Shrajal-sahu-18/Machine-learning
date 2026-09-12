@@ -25,3 +25,8 @@ labels = dbscan.fit_predict(X_scaled)
 sns.scatterplot(x = X_scaled[:,0],y = X_scaled[:,2],c = labels)
 
 from sklearn.datasets import make_moons
+X,y = make_moons(
+    n_samples = 300,
+    noise = 0.05,
+    random_state = 42
+)
