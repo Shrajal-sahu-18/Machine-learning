@@ -21,3 +21,5 @@ dbscan = DBSCAN(
 
 dbscan.fit(X_scaled)
 labels = dbscan.fit_predict(X_scaled)
+
+sns.scatterplot(x = X_scaled[:,0],y = X_scaled[:,2],c = labels)
