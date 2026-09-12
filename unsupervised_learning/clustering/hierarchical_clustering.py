@@ -21,3 +21,10 @@ sns.scatterplot(x = X_scaled[:,0],y = X_scaled[:,2],c = y)
 from scipy.cluster.hierarchy import linkage,dendrogram
 #linkage matrix
 Z = linkage(X_scaled,method = "ward")
+
+#ploot
+plt.figure(figsize = (12,6))
+dendrogram(Z)
+plt.xlabel("samples")
+plt.ylabel("distance")
+plt.title("dendrogram for hierarichical clustering")
