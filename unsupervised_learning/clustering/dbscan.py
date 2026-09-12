@@ -33,3 +33,4 @@ X,y = make_moons(
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
+sns.scatterplot(x = X_scaled[:,0],y = X_scaled[:,1])
