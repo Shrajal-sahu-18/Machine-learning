@@ -26,3 +26,14 @@ X_pca = pca.fit_transform(X_scaled)
 print("explain varriance ratio :",pca.explained_variance_ratio_)
 #print components
 print(pca.components_)# Eigen vectors
+
+#visulize
+plt.figure(figsize = (8,6))
+plt.scatter(
+    X_pca[:,0],
+    X_pca[:,1],
+    c = y
+)
+plt.xlabel("pc1")
+plt.ylabel("pc2")
+plt.title("PCA for iris dataset")
