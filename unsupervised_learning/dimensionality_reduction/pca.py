@@ -6,3 +6,7 @@ from sklearn.preprocessing import StandardScaler
 
 # load data
 iris = load_iris()
+
+X = pd.DataFrame(iris.data)
+X.columns = iris.feature_names
+y = iris.target
