@@ -14,3 +14,9 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 sns.scatterplot(x = X_scaled[:,0],y = X_scaled[:,1] )
+
+#DBSCAN
+dbscan = DBSCAN(
+    eps = 0.2,
+    min_samples = 5
+)
