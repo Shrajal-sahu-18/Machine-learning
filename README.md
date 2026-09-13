@@ -38,6 +38,7 @@ K-means clustering
 hierarchical clustering
 DBSCAN clustering
 )
+- Dimensionality Reduction
   
 ```
 
