@@ -34,15 +34,15 @@ This repo help us to understand Machine learning in structure format
 ## Unspervised Learning
 ```
 - clustering(
-K-means clustering
-hierarchical clustering
-DBSCAN clustering
+K-means clustering,
+hierarchical clustering,
+DBSCAN clustering,
 )
 - Dimensionality Reduction(
 PCA
 )
 -Anomly Detection(
-DBSCAN anomly
+DBSCAN anomly,
 isolation forest)
   
 ```
