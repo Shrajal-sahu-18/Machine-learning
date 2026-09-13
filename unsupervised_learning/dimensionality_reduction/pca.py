@@ -10,3 +10,7 @@ iris = load_iris()
 X = pd.DataFrame(iris.data)
 X.columns = iris.feature_names
 y = iris.target
+
+#scale the data
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
