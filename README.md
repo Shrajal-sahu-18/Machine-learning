@@ -41,6 +41,7 @@ DBSCAN clustering
 - Dimensionality Reduction(
 PCA
 )
+-Anomly Detection()
   
 ```
 
