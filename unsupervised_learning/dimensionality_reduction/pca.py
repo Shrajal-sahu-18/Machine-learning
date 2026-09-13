@@ -14,3 +14,6 @@ y = iris.target
 #scale the data
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
+
+#import pca
+from sklearn.decomposition import PCA
