@@ -46,3 +46,14 @@ n_outliers = np.sum(labels == -1)
 from sklearn.neighbors import LocalOutlierFactor
 lof = LocalOutlierFactor()
 labels = lof.fit_predict(X_scaled)
+
+plt.figure(figsize = (8,6))
+plt.scatter(
+    X_pca[:,0],
+    X_pca[:,1],
+    c = labels
+    
+)
+plt.xlabel("PCA1")
+plt.ylabel("PCA2")
+plt.title("LOf")
