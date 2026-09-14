@@ -57,3 +57,8 @@ plt.scatter(
 plt.xlabel("PCA1")
 plt.ylabel("PCA2")
 plt.title("LOf")
+
+
+
+n_normal = np.sum(labels == 1)
+print(n_normal)
