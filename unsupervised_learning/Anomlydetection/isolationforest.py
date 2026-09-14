@@ -19,3 +19,5 @@ clf = IsolationForest(
       # auto ka mtlb reseach paper ke under jitne value set set hai 
     random_state = 42
 )
+
+labels = clf.fit_predict(X_scaled)
