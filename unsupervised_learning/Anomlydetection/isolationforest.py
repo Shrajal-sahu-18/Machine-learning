@@ -10,3 +10,12 @@ y = df["Outlier_label"]
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
+
+#clf = classifier
+clf = IsolationForest(
+    n_estimators = 200,
+    contamination= 0.036,
+    # contamination='auto',
+      # auto ka mtlb reseach paper ke under jitne value set set hai 
+    random_state = 42
+)
