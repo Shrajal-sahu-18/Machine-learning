@@ -6,3 +6,6 @@ df = pd.read_csv("thyroid_dataset.csv")
 
 X = df.drop("Outlier_label",axis = 1)
 y = df["Outlier_label"]
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
