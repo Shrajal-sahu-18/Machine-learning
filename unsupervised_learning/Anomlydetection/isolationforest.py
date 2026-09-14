@@ -45,3 +45,4 @@ n_outliers = np.sum(labels == -1)
 # LOF(Local Outlier Factor)
 from sklearn.neighbors import LocalOutlierFactor
 lof = LocalOutlierFactor()
+labels = lof.fit_predict(X_scaled)
