@@ -21,3 +21,6 @@ clf = IsolationForest(
 )
 
 labels = clf.fit_predict(X_scaled)
+
+# visulize
+from sklearn.decomposition import PCA
