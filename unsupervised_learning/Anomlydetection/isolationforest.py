@@ -24,3 +24,6 @@ labels = clf.fit_predict(X_scaled)
 
 # visulize
 from sklearn.decomposition import PCA
+pca = PCA(
+    n_components = 2
+)
