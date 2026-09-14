@@ -28,3 +28,12 @@ pca = PCA(
     n_components = 2
 )
 X_pca = pca.fit_transform(X_scaled)
+
+plt.figure(figsize = (8,6))
+plt.scatter(
+    X_pca[:,0],
+    X_pca[:,1],
+    c = labels
+)
+plt.xlabel("PCA1")
+plt.ylabel("PCA2")
