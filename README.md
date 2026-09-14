@@ -77,6 +77,9 @@ supervised_learning/
 ├── Ensemble_boosting
 
 Unsupervised_learning/
+├──Anomlydetection/
+├──clustering/
+├──dimensionality_reduction
               
 ```
 
