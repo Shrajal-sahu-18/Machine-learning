@@ -37,3 +37,5 @@ plt.scatter(
 )
 plt.xlabel("PCA1")
 plt.ylabel("PCA2")
+
+import numpy as np
