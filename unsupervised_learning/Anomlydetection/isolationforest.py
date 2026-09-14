@@ -62,3 +62,6 @@ plt.title("LOf")
 
 n_normal = np.sum(labels == 1)
 print(n_normal)
+
+n_outliers = np.sum(labels == -1)
+print(n_outliers)
