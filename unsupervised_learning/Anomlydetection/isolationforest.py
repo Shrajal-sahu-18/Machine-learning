@@ -40,3 +40,4 @@ plt.ylabel("PCA2")
 
 import numpy as np
 n_normal = np.sum(labels == 1)
+n_outliers = np.sum(labels == -1)
