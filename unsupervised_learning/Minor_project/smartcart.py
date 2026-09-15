@@ -27,3 +27,6 @@ refrence_date = df["Dt_Customer"].max()
 
 # Create new columns customers tenure days
 df["Customer_tenure_days"] = (refrence_date - df["Dt_Customer"]).dt.days
+
+# Total Spending new column
+df["Total_spending"] =  df["MntWines"] + df["MntFruits"] + df["MntMeatProducts"] + df["MntFishProducts"] + df["MntSweetProducts"] + df["MntGoldProds"]
