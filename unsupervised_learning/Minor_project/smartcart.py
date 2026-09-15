@@ -93,3 +93,7 @@ sns.heatmap(
     annot_kws = {"size":6,"weight":"bold"},
     cmap = "coolwarm"
 )
+
+#Encoding
+ohe =  OneHotEncoder()
+cat_cols = ["Living_With","Education"]
