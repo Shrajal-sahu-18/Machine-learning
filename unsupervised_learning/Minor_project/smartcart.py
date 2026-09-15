@@ -67,3 +67,8 @@ spending_cols = ["MntWines","MntFruits","MntMeatProducts","MntFishProducts","Mnt
 
 cols_to_drop = cols + spending_cols
 df_clean = df.drop(columns = cols_to_drop)
+
+#Outliers
+cols = ["Income","Recency","Response","Age","Total_spending","Total_Children"]
+# relative plots of some features - pair plots
+sns.pairplot(df_clean[cols])
