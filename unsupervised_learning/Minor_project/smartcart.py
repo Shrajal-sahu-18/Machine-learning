@@ -50,3 +50,11 @@ df["Education"].value_counts()
 
 # Martial Status
 df["Marital_Status"].value_counts()
+
+#Martial Status
+df["Living_With"]  = df["Marital_Status"].replace({
+    "Married":"Partner","Together":"Partner",
+    "Single":"Alone",""
+    "Single":"Alone","Divorced":"Alone",
+    "Widow":"Alone","Absurd":"Alone","YOLO":"Alone"
+})
