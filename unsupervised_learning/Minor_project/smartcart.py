@@ -47,3 +47,6 @@ df["Education"] = df["Education"].replace({
 
 
 df["Education"].value_counts()
+
+# Martial Status
+df["Marital_Status"].value_counts()
