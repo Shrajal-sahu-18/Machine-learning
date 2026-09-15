@@ -97,3 +97,4 @@ sns.heatmap(
 #Encoding
 ohe =  OneHotEncoder()
 cat_cols = ["Living_With","Education"]
+enc_cols =  ohe.fit_transform(df_clean[cat_cols])
