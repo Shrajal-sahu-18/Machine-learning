@@ -8,3 +8,6 @@ df = pd.read_csv("smartcart_customers.csv")
 
 #Check null value
 df.isnull().sum()
+
+#Handle missing value
+df["Income"] = df["Income"].fillna(df["Income"].median())
