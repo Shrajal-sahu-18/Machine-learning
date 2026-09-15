@@ -13,3 +13,7 @@ df.isnull().sum()
 df["Income"] = df["Income"].fillna(df["Income"].median())
 
 df.isnull().sum()
+
+# Feature Engineering
+df.head()
+df.columns
