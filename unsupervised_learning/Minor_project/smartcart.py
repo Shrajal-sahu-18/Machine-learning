@@ -44,3 +44,6 @@ df["Education"] = df["Education"].replace({
     "Graduation":"Graduate",
     "PhD":"Postgraduate","Master":"Postgraduate"
 })
+
+
+df["Education"].value_counts()
