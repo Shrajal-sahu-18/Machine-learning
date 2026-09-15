@@ -5,3 +5,6 @@ import seaborn as sns
 
 # Read dataset
 df = pd.read_csv("smartcart_customers.csv")
+
+#Check null value
+df.isnull().sum()
