@@ -34,3 +34,6 @@ df["Total_spending"] =  df["MntWines"] + df["MntFruits"] + df["MntMeatProducts"]
 #Total Children New column
 # Children
 df["Total_Children"] = df["Kidhome"] + df["Teenhome"]
+
+#Education
+df["Education"].value_counts()
