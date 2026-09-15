@@ -17,3 +17,6 @@ df.isnull().sum()
 # Feature Engineering
 df.head()
 df.columns
+
+# Create New Column Age
+df["Age"] = 2026 - df["Year_Birth"]
