@@ -23,3 +23,4 @@ df["Age"] = 2026 - df["Year_Birth"]
 
 # Customer joining days
 df["Dt_Customer"] = pd.to_datetime(df["Dt_Customer"],dayfirst = True)
+refrence_date = df["Dt_Customer"].max()
