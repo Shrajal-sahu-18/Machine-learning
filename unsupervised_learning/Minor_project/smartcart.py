@@ -81,4 +81,14 @@ df_clean = df_clean[(df_clean["Income"] < 600_000)]
 
 print("Data size without outliers:",len(df_clean))
 
+# correaltion matrix
 corr = df_clean.corr(numeric_only= True)
+
+# Correlation heatmap
+plt.figure(figsize = (8,6))
+sns.heatmap(
+    corr,
+    annot= True,
+    annot_kws = {"size":6,"weight":"bold"},
+    cmap = "coolwarm"
+)
