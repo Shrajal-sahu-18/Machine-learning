@@ -81,3 +81,4 @@ df_clean = df_clean[(df_clean["Income"] < 600_000)]
 
 print("Data size without outliers:",len(df_clean))
 
+corr = df_clean.corr(numeric_only= True)
