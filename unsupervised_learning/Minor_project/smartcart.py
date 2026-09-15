@@ -24,3 +24,6 @@ df["Age"] = 2026 - df["Year_Birth"]
 # Customer joining days
 df["Dt_Customer"] = pd.to_datetime(df["Dt_Customer"],dayfirst = True)
 refrence_date = df["Dt_Customer"].max()
+
+# Create new columns customers tenure days
+df["Customer_tenure_days"] = (refrence_date - df["Dt_Customer"]).dt.days
