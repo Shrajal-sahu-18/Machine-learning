@@ -37,3 +37,10 @@ df["Total_Children"] = df["Kidhome"] + df["Teenhome"]
 
 #Education
 df["Education"].value_counts()
+
+# undergraduate,postgraduate,graduate
+df["Education"] = df["Education"].replace({
+    "Basic":"Undergraduate","2n Cycle":"Undergraduate",
+    "Graduation":"Graduate",
+    "PhD":"Postgraduate","Master":"Postgraduate"
+})
