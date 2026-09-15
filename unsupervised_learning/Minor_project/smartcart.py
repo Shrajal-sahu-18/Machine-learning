@@ -60,3 +60,9 @@ df["Living_With"]  = df["Marital_Status"].replace({
 })
 
 df["Living_With"].value_counts()
+
+# Drop columns
+cols = ["ID","Year_Birth","Marital_Status","Kidhome","Teenhome","Dt_Customer"]
+spending_cols = ["MntWines","MntFruits","MntMeatProducts","MntFishProducts","MntSweetProducts","MntGoldProds"]
+
+cols_to_drop = cols + spending_cols
