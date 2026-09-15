@@ -11,3 +11,5 @@ df.isnull().sum()
 
 #Handle missing value
 df["Income"] = df["Income"].fillna(df["Income"].median())
+
+df.isnull().sum()
