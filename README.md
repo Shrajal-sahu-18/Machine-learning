@@ -76,7 +76,10 @@ supervised_learning/
 ├── Random Forest
 ├── Ensemble_boosting
 
-
+Unsupervised_learning/
+├──Anomlydetection/
+├──clustering/
+├──dimensionality_reduction
               
 ```
 
