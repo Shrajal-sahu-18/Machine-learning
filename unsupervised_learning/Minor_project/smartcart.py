@@ -72,3 +72,12 @@ df_clean = df.drop(columns = cols_to_drop)
 cols = ["Income","Recency","Response","Age","Total_spending","Total_Children"]
 # relative plots of some features - pair plots
 sns.pairplot(df_clean[cols])
+
+# Remove Outliers
+print("Data size with outliers:",len(df_clean))
+
+df_clean = df_clean[ (df_clean["Age"] < 90)]
+df_clean = df_clean[(df_clean["Income"] < 600_000)]
+
+print("Data size without outliers:",len(df_clean))
+
