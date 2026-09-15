@@ -58,3 +58,5 @@ df["Living_With"]  = df["Marital_Status"].replace({
     "Single":"Alone","Divorced":"Alone",
     "Widow":"Alone","Absurd":"Alone","YOLO":"Alone"
 })
+
+df["Living_With"].value_counts()
