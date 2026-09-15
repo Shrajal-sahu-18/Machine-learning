@@ -30,3 +30,7 @@ df["Customer_tenure_days"] = (refrence_date - df["Dt_Customer"]).dt.days
 
 # Total Spending new column
 df["Total_spending"] =  df["MntWines"] + df["MntFruits"] + df["MntMeatProducts"] + df["MntFishProducts"] + df["MntSweetProducts"] + df["MntGoldProds"]
+
+#Total Children New column
+# Children
+df["Total_Children"] = df["Kidhome"] + df["Teenhome"]
