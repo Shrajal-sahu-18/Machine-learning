@@ -163,3 +163,7 @@ ax2.plot(k_range,scores[:len(k_range)],marker = 'x', color = "red",linestyle = "
 kmeans = KMeans(n_clusters = 4,random_state = 42)
 
 labels_kmeans = kmeans.fit_predict(X_pca)
+
+fig = plt.figure(figsize = (8,6))
+ax = fig.add_subplot(111,projection = "3d")
+ax.scatter(X_pca[:,0],X_pca[:,1],X_pca[:,2],c = labels_kmeans)
