@@ -131,3 +131,9 @@ for k in range (1,11):
 
 knee = KneeLocator(range(1,11),wcss,curve = "convex",direction="decreasing")
 optimal_k = knee.knee
+
+#plot 
+plt.plot(range(1,11),wcss,marker = 'o')
+plt.xlabel("k")
+plt.ylabel("wcss")
+plt.title("Best k plot")
