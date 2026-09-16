@@ -7,6 +7,7 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from kneed import KneeLocator
 from sklearn.metrics import silhouette_score 
+from sklearn.cluster import AgglomerativeClusteringc
 
 # Read dataset
 df = pd.read_csv("smartcart_customers.csv")
