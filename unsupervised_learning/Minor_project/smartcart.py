@@ -2,7 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder , StandardScaler
 
 # Read dataset
 df = pd.read_csv("smartcart_customers.csv")
