@@ -7,7 +7,7 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from kneed import KneeLocator
 from sklearn.metrics import silhouette_score 
-from sklearn.cluster import AgglomerativeClusteringc
+from sklearn.cluster import AgglomerativeClustering
 
 # Read dataset
 df = pd.read_csv("smartcart_customers.csv")
@@ -168,3 +168,8 @@ labels_kmeans = kmeans.fit_predict(X_pca)
 fig = plt.figure(figsize = (8,6))
 ax = fig.add_subplot(111,projection = "3d")
 ax.scatter(X_pca[:,0],X_pca[:,1],X_pca[:,2],c = labels_kmeans)
+
+agg_clf = AgglomerativeClustering(
+    n_clusters = 4,
+    linkage = "ward"
+)
