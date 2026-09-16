@@ -145,3 +145,5 @@ for k in range(2,11):
     labels = Kmeans.fit_predict(X_pca)
     score = silhouette_score(X_pca,labels)
     scores.append(score)
+
+plt.plot(range(2,11),scores,marker = 'X')
