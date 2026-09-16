@@ -122,3 +122,9 @@ pca.explained_variance_ratio_
 fig = plt.figure(figsize = (8,6))
 ax = fig.add_subplot(111,projection = "3d")
 ax.scatter(X_pca[:,0],X_pca[:,1],X_pca[:,2])
+
+wcss = []
+for k in range (1,11):
+    kmeans = KMeans(n_clusters = k , random_state = 42)
+    kmeans.fit_predict(X_pca)
+    wcss.append(kmeans.inertia_)
