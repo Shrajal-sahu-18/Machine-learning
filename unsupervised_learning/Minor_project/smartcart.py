@@ -181,3 +181,7 @@ ax = fig.add_subplot(111,projection = "3d")
 ax.scatter(X_pca[:,0],X_pca[:,1],X_pca[:,2], c = labels_agg)
 
 X["clusters"] = labels_agg
+
+pal = ["red","blue","yellow","green"]
+# sns.countplot(x = df_clean["clusters"],palette = pal,hue = df_clean["clusters"])
+sns.countplot(x = X["clusters"],palette = pal,hue = X["clusters"])
