@@ -147,3 +147,15 @@ for k in range(2,11):
     scores.append(score)
 
 plt.plot(range(2,11),scores,marker = 'X')
+
+
+# Combine plot
+k_range = range(2,11)
+
+fig,ax1 = plt.subplots(figsize = (8,6))
+ax1.plot(k_range,wcss[:len(k_range)],marker = 'o',color = "blue") # wcss ki first 9 value yaha wcss[1:10] kyuki k ki value range 1,11 hai 
+ax1.set_xlabel("K")
+ax1.set_ylabel("WCSS")
+
+ax2 = ax1.twinx()
+ax2.plot(k_range,scores[:len(k_range)],marker = 'x', color = "red",linestyle = "--")
