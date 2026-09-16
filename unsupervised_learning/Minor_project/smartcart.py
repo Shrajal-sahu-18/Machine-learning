@@ -128,3 +128,6 @@ for k in range (1,11):
     kmeans = KMeans(n_clusters = k , random_state = 42)
     kmeans.fit_predict(X_pca)
     wcss.append(kmeans.inertia_)
+
+knee = KneeLocator(range(1,11),wcss,curve = "convex",direction="decreasing")
+optimal_k = knee.knee
