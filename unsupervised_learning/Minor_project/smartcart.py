@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import OneHotEncoder , StandardScaler
 from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
+from kneed import KneeLocator
 
 # Read dataset
 df = pd.read_csv("smartcart_customers.csv")
