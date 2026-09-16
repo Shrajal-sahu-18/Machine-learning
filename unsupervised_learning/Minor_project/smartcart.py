@@ -104,3 +104,6 @@ encoded_df = pd.DataFrame(enc_cols.toarray(),columns = ohe.get_feature_names_out
 df_encoded = pd.concat([df.drop(columns = cat_cols),encoded_df],axis = 1)
 
 X = df_encoded
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
