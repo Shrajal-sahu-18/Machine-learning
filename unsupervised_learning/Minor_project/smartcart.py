@@ -108,3 +108,6 @@ X = df_encoded
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
+
+pca = PCA(n_components = 3)
+X_pca = pca.fit_transform(X_scaled)
