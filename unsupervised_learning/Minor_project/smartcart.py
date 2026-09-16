@@ -138,3 +138,10 @@ plt.plot(range(1,11),wcss,marker = 'o')
 plt.xlabel("k")
 plt.ylabel("wcss")
 plt.title("Best k plot")
+
+scores = []
+for k in range(2,11):
+    Kmeans = KMeans(n_clusters = k ,random_state = 42)
+    labels = Kmeans.fit_predict(X_pca)
+    score = silhouette_score(X_pca,labels)
+    scores.append(score)
