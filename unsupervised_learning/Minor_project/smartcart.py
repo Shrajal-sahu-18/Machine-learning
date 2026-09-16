@@ -114,3 +114,5 @@ X_pca = pca.fit_transform(X_scaled)
 
 #plot
 sns.scatterplot(x = X_pca[:,0],y = X_pca[:,1])
+
+pca.explained_variance_ratio_
