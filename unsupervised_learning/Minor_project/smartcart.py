@@ -159,3 +159,5 @@ ax1.set_ylabel("WCSS")
 
 ax2 = ax1.twinx()
 ax2.plot(k_range,scores[:len(k_range)],marker = 'x', color = "red",linestyle = "--")
+
+kmeans = KMeans(n_clusters = 4,random_state = 42)
