@@ -173,3 +173,5 @@ agg_clf = AgglomerativeClustering(
     n_clusters = 4,
     linkage = "ward"
 )
+
+labels_agg = agg_clf.fit_predict(X_pca)
