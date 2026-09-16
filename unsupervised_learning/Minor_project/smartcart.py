@@ -111,3 +111,6 @@ X_scaled = scaler.fit_transform(X)
 
 pca = PCA(n_components = 3)
 X_pca = pca.fit_transform(X_scaled)
+
+#plot
+sns.scatterplot(x = X_pca[:,0],y = X_pca[:,1])
