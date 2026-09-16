@@ -100,3 +100,5 @@ cat_cols = ["Living_With","Education"]
 enc_cols =  ohe.fit_transform(df_clean[cat_cols])
 
 encoded_df = pd.DataFrame(enc_cols.toarray(),columns = ohe.get_feature_names_out(enc_cols),index = df_clean.index)
+
+df_encoded = pd.concat([df.drop(columns = cat_cols),encoded_df],axis = 1)
