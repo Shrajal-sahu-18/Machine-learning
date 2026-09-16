@@ -187,3 +187,5 @@ pal = ["red","blue","yellow","green"]
 sns.countplot(x = X["clusters"],palette = pal,hue = X["clusters"])
 
 sns.scatterplot(x = X["Total_spending"],y = X["Income"], hue = X["clusters"],palette = pal)
+
+cluster_summary = X.groupby("clusters").mean()
